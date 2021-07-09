@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Lato-Black';
+  font-weight: 900;
+  src: url(../fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  font-weight: 400;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: 'Lato-Light';
+  font-weight: 300;
+  src: url(../fonts/Lato-Light.ttf);
+}
+
+:root {
+  --dark-grey-color: #222533;
+  --medium-grey-color: #a1b1bc;
+  --light-grey-color: #ecf0f1;
+  --main-green-color: #1abc9c;
+}
+
+.flex {
+  display: flex;
+}
+.flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.lato-black {
+  font-family: Lato-black, sans-serif;
+}
+.lato-light {
+  font-family: Lato-Light, sans-serif;
+}
+.lato-regular {
+  font-family: Lato-Regular, sans-serif;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+.font-60 {
+  font-size: 60px;
+}
