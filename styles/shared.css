@@ -16,6 +16,7 @@
 
 :root {
   --dark-grey-color: #222533;
+  --dark-grey-secondary: #2C3E50;
   --medium-grey-color: #a1b1bc;
   --light-grey-color: #ecf0f1;
   --main-green-color: #1abc9c;
@@ -28,6 +29,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.space-between {
+  justify-content: space-between;
 }
 .flex-column {
   flex-direction: column;
@@ -44,6 +48,9 @@
 
 .font-14 {
   font-size: 14px;
+}
+.font-15 {
+  font-size: 15px;
 }
 .font-16 {
   font-size: 16px;
@@ -74,3 +81,12 @@
 .line-height-36 {
   line-height: 36px;
 }
+.inline-block {
+  display: inline-block;
+}
+/* .absolute {
+  position:absolute;
+}
+.relative {
+  position: relative;
+} */

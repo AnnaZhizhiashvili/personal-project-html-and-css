@@ -1,17 +1,16 @@
-section {
-  width: 100%;
-  height: 1280px;
-}
+/* first component */
+
 
 .component-1 {
   position: relative;
   background-color: var(--dark-grey-color);
   color: #fff;
+  height: 1280px;
 }
 .component-1 .container {
   position: absolute;
   left: 50%;
-  top: 472px;
+  top: 471px;
   transform: translateX(-50%);
   width: 1126px;
   height: 264px;
@@ -25,7 +24,7 @@ section {
 }
 
 .component-1 p:nth-child(3) {
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 .component-1 button {
@@ -41,8 +40,8 @@ section {
   margin-right: 15px;
 }
 .component-1 .buttons {
-  margin-top: 41px;
-  padding-left: 12px;
+  margin-top: 40px;
+  padding-left: 14px;
 }
 
 .component-1 button:hover {
@@ -50,8 +49,8 @@ section {
 }
 
 .component-1 form {
-  margin-top: 25px;
-  padding-right: 12px;
+  margin-top: 26px;
+  padding-right: 15px;
 }
 .component-1 form label {
   position: relative;
@@ -94,3 +93,35 @@ section {
 .container input:checked ~ .checkmark::before {
   display: block;
 }
+
+/* second component */
+
+.component-2 {
+  height: 90px;
+  padding-top: 22px;
+  padding-left: 375px;
+  padding-right: 447px;
+  padding-bottom: 37.3px;
+  padding: 40px 457px 37.3px 375px ;
+  justify-content: start;
+  color: var(--medium-grey-color);
+}
+.component-2 nav {
+  margin-left: 153px;
+}
+.component-2 .logo a {
+  gap: 14px
+}
+
+.component-2 .logo span {
+  color: var(--dark-grey-secondary);
+  font-size: 35.69px;
+  line-height: 13.77px;
+}
+.component-2 li {
+  line-height: 19px;
+}
+.component-2 li:not(:last-child) {
+  margin-right: 46px;
+}
+
