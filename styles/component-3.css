@@ -1,0 +1,31 @@
+
+.component-3 {
+    height: 434px;
+    padding: 43px 376px 0 376px;
+    text-align: center;
+  }
+  
+  .component-3 > div {
+    border: 1px solid #DBE7EF;
+    border-radius: 3px;
+    padding: 50.8px 38.6px;
+    position: relative;
+    bottom: 9px;
+    height: 210px;
+    width: 270px;
+  
+  }
+  .component-3 > div:not(:last-child){
+    margin-right: 30px;
+  }
+  
+  .component-3 img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .component-3 p {
+    margin-top: 12.5px;
+  }

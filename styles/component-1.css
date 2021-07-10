@@ -1,0 +1,93 @@
+
+.component-1 {
+    position: relative;
+    background-color: var(--dark-grey-color);
+    color: #fff;
+    height: 1280px;
+  }
+  .component-1 .container {
+    position: absolute;
+    left: 50%;
+    top: 471px;
+    transform: translateX(-50%);
+    width: 1126px;
+    height: 264px;
+    text-align: center;
+  }
+  
+  .component-1 p:first-child {
+    letter-spacing: 0.3em;
+    margin-bottom: 18px;
+    padding-left: 11px;
+  }
+  
+  .component-1 p:nth-child(3) {
+    margin-top: 11px;
+  }
+  
+  .component-1 button {
+    color: inherit;
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition-duration: 0.2s;
+  }
+  .component-1 button:not(:last-child) {
+    margin-right: 15px;
+  }
+  .component-1 .buttons {
+    margin-top: 40px;
+    padding-left: 14px;
+  }
+  
+  .component-1 button:hover {
+    background-color: var(--main-green-color);
+  }
+  
+  .component-1 form {
+    margin-top: 26px;
+    padding-right: 15px;
+  }
+  .component-1 form label {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+  }
+  .component-1 form label:not(:last-child) {
+    margin-right: 5px;
+  }
+  
+  .component-1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .component-1 .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .component-1 .checkmark::before {
+    content: '';
+    background-color: var(--main-green-color);
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: none;
+    transition-duration: 0.2s;
+  }
+  
+  .container input:checked ~ .checkmark::before {
+    display: block;
+  }
