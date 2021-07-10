@@ -4,6 +4,7 @@
     background-color: var(--dark-grey-color);
     color: #fff;
     height: 1280px;
+
   }
   .component-1 .container {
     position: absolute;
@@ -13,6 +14,7 @@
     width: 1126px;
     height: 264px;
     text-align: center;
+    margin-left: 9px;
   }
   
   .component-1 p:first-child {
