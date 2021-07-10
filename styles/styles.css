@@ -98,10 +98,6 @@
 
 .component-2 {
   height: 90px;
-  padding-top: 22px;
-  padding-left: 375px;
-  padding-right: 447px;
-  padding-bottom: 37.3px;
   padding: 40px 457px 37.3px 375px ;
   justify-content: start;
   color: var(--medium-grey-color);
@@ -125,3 +121,34 @@
   margin-right: 46px;
 }
 
+/* third component */
+
+.component-3 {
+  height: 501px;
+  padding: 0 375px 0 375px;
+  text-align: center;
+}
+
+.component-3 > div {
+  border: 1px solid #DBE7EF;
+  border-radius: 3px;
+  padding: 52.8px 38.6px;
+  position: relative;
+  bottom: 9px;
+
+}
+.component-3 > div:not(:last-child){
+  margin-right: 30px;
+}
+
+.component-3 img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.component-3 p {
+ 
+  margin-top: 12.5px;
+}

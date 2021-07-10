@@ -4,6 +4,11 @@
   src: url(../fonts/Lato-Black.ttf);
 }
 @font-face {
+  font-family: 'Lato-Bold';
+  font-weight: 700;
+  src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face {
   font-family: 'Lato-Regular';
   font-weight: 400;
   src: url(../fonts/Lato-Regular.ttf);
@@ -22,6 +27,8 @@
   --main-green-color: #1abc9c;
 }
 
+
+
 .flex {
   display: flex;
 }
@@ -36,8 +43,13 @@
 .flex-column {
   flex-direction: column;
 }
+
+/* font-families */
 .lato-black {
-  font-family: Lato-black, sans-serif;
+  font-family: Lato-Black, sans-serif;
+}
+.lato-bold {
+  font-family: Lato-Bold, sans-serif;
 }
 .lato-light {
   font-family: Lato-Light, sans-serif;
@@ -45,6 +57,8 @@
 .lato-regular {
   font-family: Lato-Regular, sans-serif;
 }
+
+/* font-sizes */
 
 .font-14 {
   font-size: 14px;
@@ -67,15 +81,29 @@
   font-size: 60px;
 }
 
+/* colors */
+
 .background-green {
   background-color: var(--main-green-color);
 }
 .color-green {
   color: var(--main-green-color);
 }
+.color-secondary-grey {
+  color: var(--dark-grey-secondary)
+}
+.color-medium-grey {
+  color: var(--medium-grey-color)
+}
+
+/* line-heights */
 
 .line-height-19 {
   line-height: 19px;
+}
+
+.line-height-24 {
+  line-height: 24px;
 }
 
 .line-height-36 {
@@ -84,9 +112,3 @@
 .inline-block {
   display: inline-block;
 }
-/* .absolute {
-  position:absolute;
-}
-.relative {
-  position: relative;
-} */
