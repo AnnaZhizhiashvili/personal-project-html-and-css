@@ -10,7 +10,12 @@
     border: 1px solid #E5E5E5;
     cursor: pointer;
     box-shadow: 0 11px 7px -10px #00000017;
+    transition: all .2s ease-out;
+    position: relative;
+  
   }
+
+
   .component-4 .container {
     padding-top: 81px;
   

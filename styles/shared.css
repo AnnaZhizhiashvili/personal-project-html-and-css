@@ -44,6 +44,17 @@
   flex-direction: column;
 }
 
+.center {
+  margin: 0 auto;
+}
+/* buttons */
+.button:hover {
+  background-color: var(--main-green-color);
+  color: #fff;
+}
+.button:active {
+  transform: translateY(5px);
+} 
 
 /* font-families */
 .lato-black {
@@ -106,6 +117,9 @@
 .line-height-19 {
   line-height: 19px;
 }
+.line-height-20 {
+  line-height: 20px;
+}
 
 .line-height-24 {
   line-height: 24px;
@@ -117,4 +131,5 @@
 .line-height-40 {
   line-height: 40px;
 }
+
 

@@ -12,6 +12,10 @@
   .component-2 .logo a {
     gap: 14px
   }
+  .component-2  nav a:hover {
+    color: var(--main-green-color);
+    transition: all .2s ease-out;
+  }
   
   .component-2 .logo span {
     color: var(--dark-grey-secondary);

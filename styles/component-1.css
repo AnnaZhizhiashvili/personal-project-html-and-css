@@ -42,10 +42,6 @@
     padding-left: 14px;
   }
   
-  .component-1 button:hover {
-    background-color: var(--main-green-color);
-  }
-  
   .component-1 form {
     margin-top: 26px;
     padding-right: 15px;
