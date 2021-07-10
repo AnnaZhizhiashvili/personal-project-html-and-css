@@ -44,6 +44,7 @@
   flex-direction: column;
 }
 
+
 /* font-families */
 .lato-black {
   font-family: Lato-Black, sans-serif;
@@ -77,6 +78,10 @@
 .font-30 {
   font-size: 30px;
 }
+
+.font-36 {
+  font-size: 36px;
+}
 .font-60 {
   font-size: 60px;
 }
@@ -109,6 +114,7 @@
 .line-height-36 {
   line-height: 36px;
 }
-.inline-block {
-  display: inline-block;
+.line-height-40 {
+  line-height: 40px;
 }
+
