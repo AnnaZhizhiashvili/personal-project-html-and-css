@@ -28,7 +28,7 @@
     transition: all .2s ease-out;
 
 }
-.box img {
+.component-6 .box img {
     position: absolute;
     top: 15.5%;
     left: 46.5%;
