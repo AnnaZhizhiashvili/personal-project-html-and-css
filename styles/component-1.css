@@ -48,21 +48,21 @@
     margin-top: 26px;
     padding-right: 15px;
   }
-  .component-1 form label {
+  .component-1 form label,  .component-8 form label  {
     position: relative;
     display: inline-block;
     width: 14px;
   }
-  .component-1 form label:not(:last-child) {
+  .component-1 form label:not(:last-child),  .component-8 form label:not(:last-child) {
     margin-right: 5px;
   }
   
-  .component-1 input {
+  .component-1 input,  .component-8 input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
-  .component-1 .checkmark {
+  .component-1 .checkmark, .component-8 .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,7 +72,7 @@
     background-color: #fff;
     cursor: pointer;
   }
-  .component-1 .checkmark::before {
+  .component-1 .checkmark::before,  .component-8 .checkmark::before {
     content: '';
     background-color: var(--main-green-color);
     border-radius: 50%;

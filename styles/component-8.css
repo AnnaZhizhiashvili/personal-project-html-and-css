@@ -1,0 +1,36 @@
+.component-8 {
+    height: 711px;
+    background-color: var(--light-grey-color);
+    padding-top: 138px;
+}
+.component-8 .container {
+    align-items: center;
+    text-align: center;
+}
+.component-8 .inner-1 {
+    padding-left: 18px;
+    margin-bottom: 62px;
+}
+
+.component-8 h5 {
+    margin-bottom: 24px;
+}
+.component-8 .inner-2 {
+    background-color: #fff;
+    width: 1170px;
+    height: 148px;
+    margin-left: 18px;
+    margin-bottom: 35px;
+ 
+}
+.component-8 .inner-3 {
+    margin-left: 20px;
+}
+.component-8 .inner-3 div {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 11px 7px -10px #00000017;
+    margin-bottom: 16px;
+}
