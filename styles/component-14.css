@@ -1,0 +1,13 @@
+.component-14 {
+  height: 106px;
+  background-color: var(--dark-grey-color);
+  border-top: 2px solid #fff;
+}
+
+.component-14 .container {
+  padding-top: 34px;
+  padding-left: 15px;
+}
+.component-14 ul {
+  gap: 76px;
+}
