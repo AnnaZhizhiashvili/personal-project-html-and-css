@@ -19,3 +19,9 @@ button {
 i {
   color: #fff;
 }
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
