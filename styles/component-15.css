@@ -2,8 +2,13 @@
   height: 614px;
   background-color: #1a1c27;
   color: #fff;
+  padding-top: 90px;
+  padding-left: 17px;
 }
-
+.component-15 .container {
+  gap: 32px;
+  justify-content: center;
+}
 .component-15 h3 {
   font-size: 59.49px;
   line-height: 13.77px;
@@ -31,7 +36,7 @@
 }
 .component-15 .about {
   position: relative;
-  padding-left: 26px;
+  padding-left: 29px;
   margin-bottom: 75px;
 }
 .component-15 h5 {
@@ -58,7 +63,7 @@
   background-color: var(--dark-grey-color);
   width: 370px;
   height: 50px;
-  padding-left: 28.8px;
+  padding-left: 30.8px;
   border-radius: 3px;
 }
 .component-15 .wrap button {
@@ -73,4 +78,74 @@
 .component-15 .wrap {
   position: relative;
   margin-top: 25px;
+}
+
+.component-15 .visualisation {
+  min-width: 91px;
+  min-height: 91px;
+  background-color: #fff;
+
+  position: relative;
+}
+.component-15 .visualisation img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.component-15 .inner-2 .visualisation:hover {
+  background-color: var(--main-green-color);
+}
+.component-15 .visualisation:hover + p {
+  color: #fff;
+}
+.component-15 .inner-2 .boxes {
+  gap: 18.1px;
+}
+.component-15 .inner-2 .box {
+  width: 369px;
+  height: 101.88px;
+  gap: 20px;
+  align-items: flex-start;
+}
+.component-15 .visualisation p:first-child {
+  margin-top: -9px;
+}
+.component-15 .inner-2 .about {
+  padding-left: 26px;
+  margin-bottom: 58px;
+}
+
+.component-15 .box p {
+  position: relative;
+  bottom: 8px;
+}
+.component-15 .inner-3 .boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 85px);
+  gap: 10px;
+}
+.component-15 .inner-3 .visualisation:hover {
+  background-color: var(--medium-grey-color);
+  border: 3px solid #fff;
+  transform: scale(1.1);
+}
+
+.component-15 .inner-3 .about {
+  padding-left: 25px;
+  margin-bottom: 60px;
+}
+.component-15 .inner-3 .visualisation {
+  min-width: 84px;
+  min-height: 84px;
+}
+
+.component-15 .inner-3 a {
+  display: inline-block;
+  margin-top: 26px;
+}
+
+.component-15 .inner-3 a:hover {
+  transform: scale(0.95);
+  opacity: 0.95;
 }
