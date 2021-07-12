@@ -1,37 +1,33 @@
 @font-face {
-  font-family: 'Lato-Black';
+  font-family: "Lato-Black";
   font-weight: 900;
   src: url(../fonts/Lato-Black.ttf);
 }
 @font-face {
-  font-family: 'Lato-Bold';
+  font-family: "Lato-Bold";
   font-weight: 700;
   src: url(../fonts/Lato-Bold.ttf);
 }
 @font-face {
-  font-family: 'Lato-Regular';
+  font-family: "Lato-Regular";
   font-weight: 400;
   src: url(../fonts/Lato-Regular.ttf);
 }
 @font-face {
-  font-family: 'Lato-Light';
+  font-family: "Lato-Light";
   font-weight: 300;
   src: url(../fonts/Lato-Light.ttf);
 }
 
 :root {
   --dark-grey-color: #222533;
-  --dark-grey-secondary: #2C3E50;
+  --dark-grey-secondary: #2c3e50;
   --medium-grey-color: #a1b1bc;
-  --medium-grey-secondary: #34495E;
+  --medium-grey-secondary: #34495e;
   --light-grey-color: #ecf0f1;
-  --light-grey-secondary: #EAEBEC;
+  --light-grey-secondary: #eaebec;
   --main-green-color: #1abc9c;
-
-
 }
-
-
 
 .flex {
   display: flex;
@@ -56,11 +52,15 @@
   position: absolute;
   top: 50%;
   left: 50;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+}
+
+.transition {
+  transition: all 0.2s ease-out;
 }
 /* buttons */
 .button {
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   cursor: pointer;
   outline: none;
   border: none;
@@ -71,7 +71,7 @@
 }
 .button:active {
   transform: translateY(5px);
-} 
+}
 
 /* font-families */
 .lato-black {
@@ -129,35 +129,35 @@
   color: var(--main-green-color);
 }
 .color-secondary-grey {
-  color: var(--dark-grey-secondary)
+  color: var(--dark-grey-secondary);
 }
 .color-medium-grey {
-  color: var(--medium-grey-color)
+  color: var(--medium-grey-color);
 }
 .background-medium-grey {
-  background-color: var(--medium-grey-color)
+  background-color: var(--medium-grey-color);
 }
 .background-light-grey {
-  background-color: var(--light-grey-color)
+  background-color: var(--light-grey-color);
 }
 
 .background-medium-secondary {
- background-color: var(--medium-grey-secondary);
+  background-color: var(--medium-grey-secondary);
 }
 .color-light-grey {
-  color: var(--light-grey-color)
+  color: var(--light-grey-color);
 }
 .color-white {
   color: #fff;
 }
 .green-table {
-  color: #7BC200;
+  color: #7bc200;
 }
 .red-table {
-  color: #EF584D;
+  color: #ef584d;
 }
 .background-gradient {
-  background: linear-gradient(45deg, #1DD1AD, #45D0FF);
+  background: linear-gradient(45deg, #1dd1ad, #45d0ff);
 }
 
 /* line-heights */
@@ -188,5 +188,3 @@
 .line-height-40 {
   line-height: 40px;
 }
-
-

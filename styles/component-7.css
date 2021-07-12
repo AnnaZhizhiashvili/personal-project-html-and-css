@@ -1,114 +1,110 @@
 .component-7 {
-    height: 810px;
-    text-align: center;
-    padding-top: 103px;
-
-
+  height: 810px;
+  text-align: center;
+  padding-top: 103px;
 }
 
 .component-7 .inner-3 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    position: relative;
-    left: 7px;
-    height: 400px;
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  left: 7px;
+  height: 400px;
 }
 .component-7 .inner-1 {
-    padding-left: 16px;
-    margin-bottom: 46px;
+  padding-left: 16px;
+  margin-bottom: 46px;
 }
 .component-7 h5 {
-    margin-bottom: 24px;
-    
+  margin-bottom: 24px;
 }
 .component-7 .inner-2 {
-    justify-content: space-between;
-    height: 51px;
-    margin-bottom: 53px;
-    padding-left: 9px;
+  justify-content: space-between;
+  height: 51px;
+  margin-bottom: 53px;
+  padding-left: 9px;
 }
 
 .component-7 .boxes {
-    width: 1170.24px;
-    margin: 0 auto;
+  width: 1170.24px;
+  margin: 0 auto;
 }
 .component-7 .inner-2 {
-    border-top: 1px solid var(--light-grey-color);
-    border-bottom: 1px solid var(--light-grey-color);
-    align-items: center;
+  border-top: 1px solid var(--light-grey-color);
+  border-bottom: 1px solid var(--light-grey-color);
+  align-items: center;
 }
 .component-7 li {
-    margin-right: 33px;
+  margin-right: 33px;
 }
 
-.component-7 ul li:first-child, .component-7 ul li:nth-child(2), .component-7 li:nth-child(3), .component-7 li:nth-child(4), .component-7 li:nth-child(5){ 
-    margin-right: 32px;
-    transition: all .2s ease-out;
+.component-7 ul li:first-child,
+.component-7 ul li:nth-child(2),
+.component-7 li:nth-child(3),
+.component-7 li:nth-child(4),
+.component-7 li:nth-child(5) {
+  margin-right: 32px;
+  transition: all 0.2s ease-out;
 }
 .component-7 li:hover {
-    color: var(--main-green-color)
+  color: var(--main-green-color);
 }
 .component-7 button {
-    width: 122px;
-    height: 36px;
-    border-radius: 5px;
-    position: relative;
-    left: 9px;
-    top: 1px;
-    
+  width: 122px;
+  height: 36px;
+  border-radius: 5px;
+  position: relative;
+  left: 9px;
+  top: 1px;
 }
 .component-7 .box {
-    transition: all .2s ease-out;
-    position: relative;
-   
+  transition: all 0.2s ease-out;
+  position: relative;
 }
 .component-7 .inner-3 .inner-content {
-    left: 0;
-    bottom: 0;
-    background-color: #fff;
-    width: 100%;
-    position: absolute;
-    height: 35%;
-    opacity: 0;
-    transition: all .2s ease-out;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  height: 35%;
+  opacity: 0;
+  transition: all 0.2s ease-out;
 }
 .component-7 .inner-content p {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-.triangle{
-    position:absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-	width: 0;
-	height: 10px;
-	border-width: 0 12px 12px 12px;
-	border-color: transparent transparent #fff transparent;
-	border-style: solid;
-    opacity: 0;
-    transition: all .2s ease-out;
-
+.triangle {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 10px;
+  border-width: 0 12px 12px 12px;
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  opacity: 0;
+  transition: all 0.2s ease-out;
 }
-.component-7 i {
-    font-size: 24px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: all .2s ease-out;
+.component-7 i,
+.component-7 img {
+  font-size: 24px;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.2s ease-out;
 }
-
 
 .component-7 .box:hover {
-    background-color: var(--dark-grey-secondary);
-    cursor: pointer;
-
+  background-color: var(--dark-grey-secondary);
+  cursor: pointer;
 }
 
-.component-7 .box:hover .inner-content,  .component-7 .box:hover .triangle, .component-7 .box:hover i{
-    opacity: 100%;
- 
+.component-7 .box:hover .inner-content,
+.component-7 .box:hover .triangle,
+.component-7 .box:hover img {
+  opacity: 100%;
 }
-

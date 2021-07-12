@@ -47,7 +47,8 @@
   padding-right: 15px;
 }
 .component-1 form label,
-.component- form label {
+.component-8 form label,
+.component-13 .radio form label {
   position: relative;
   display: inline-block;
   width: 14px;
@@ -58,13 +59,15 @@
 }
 
 .component-1 input,
-.component-8 input {
+.component-8 input,
+.component-13 .radio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 .component-1 .checkmark,
-.component-8 .checkmark {
+.component-8 .checkmark,
+.component-13 .radio .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,7 +78,8 @@
   cursor: pointer;
 }
 .component-1 .checkmark::before,
-.component-8 .checkmark::before {
+.component-8 .checkmark::before,
+.component-13 .radio .checkmark::before {
   content: "";
   background-color: var(--main-green-color);
   border-radius: 50%;

@@ -1,0 +1,126 @@
+.component-13 {
+  height: 775px;
+  background-color: #222533;
+  color: #fff;
+  padding-top: 99px;
+}
+.component-13 .container {
+  gap: 32px;
+}
+.component-13 .upper ul {
+  gap: 26px;
+}
+
+.component-13 h5 {
+  margin-bottom: 45.5px;
+}
+
+.component-13 .inner-1 p {
+  padding-left: 3px;
+  margin-bottom: 17px;
+}
+.component-13 i {
+  font-size: 24px;
+}
+.component-13 i:hover {
+  color: #16b5d8;
+}
+.component-13 input {
+  height: 50px;
+  padding-left: 20px;
+}
+.component-13 textarea {
+  height: 100px;
+}
+.component-13 input,
+.component-13 textarea {
+  background-color: transparent;
+  border: 1px solid #636372;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.component-13 input::placeholder {
+  color: #fff;
+}
+.component-13 .below form {
+  width: 570px;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.component-13 button {
+  width: 100%;
+  height: 52px;
+}
+
+.component-13 .below {
+  padding-left: 2px;
+  margin-top: 28px;
+}
+
+.component-13 .visualisation {
+  width: 125px;
+  height: 125px;
+  background-color: #fff;
+
+  border: 5px solid #fff;
+  position: relative;
+}
+.component-13 .box {
+  justify-content: space-between;
+  gap: 20px;
+}
+.component-13 .box:not(:last-child) {
+  margin-bottom: 39.6px;
+}
+.component-13 .description p:first-child {
+  position: relative;
+  bottom: 5px;
+}
+.component-13 .description p:nth-child(2) {
+  padding-bottom: 3px;
+  position: relative;
+  bottom: 3px;
+}
+
+.component-13 .inner-2 h5 {
+  margin-bottom: 53.5px;
+}
+.component-13 .box:hover {
+  cursor: pointer;
+}
+.component-13 .box:hover .visualisation {
+  background: transparent;
+}
+.component-13 .visualisation img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.component-13 .radio .checkmark,
+.component-13 .radio .checkmark::before {
+  border-radius: unset;
+}
+.component-13 .radio .checkmark::before {
+  width: 100%;
+  height: 100%;
+}
+
+.component-13 .radio .checkmark {
+  width: 10px;
+  height: 10px;
+}
+.component-13 .radio form label:not(:last-child) {
+  margin-right: 1px;
+}
+
+.component-13 .radio form {
+  position: relative;
+  bottom: 6px;
+  left: 1px;
+}
+.component-13 button:hover {
+  opacity: 0.8;
+}
