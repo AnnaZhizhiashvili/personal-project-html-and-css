@@ -6,7 +6,6 @@
   border-bottom: 7px solid var(--medium-grey-color);
 }
 .component-5 .container {
-  padding-top: 103px;
   padding: 103px 0 0 17px;
 }
 
@@ -66,4 +65,63 @@
 .component-5 .circle:hover span {
   background-color: var(--dark-grey-secondary);
   color: #fff;
+}
+
+@media only screen and (max-width: 1280px) {
+  .component-5 {
+    height: unset;
+    padding: 76px;
+  }
+  .component-5 .inner-1 {
+    height: unset;
+    width: unset;
+  }
+  .component-5 .inner-2 {
+    margin-left: unset;
+  }
+  .component-5 .inner-2 > div {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .component-5 .inner-2 .inner-container {
+    flex-basis: 44%;
+  }
+  .component-5 .inner-2 .inner-container:nth-child(2),
+  .component-5 .inner-2 .inner-container:nth-child(3) {
+    margin-right: unset;
+  }
+  .component-5 .inner-container div:nth-child(2) {
+    padding: 5px 20px;
+  }
+  .component-5 .container {
+    padding: unset;
+  }
+  .component-5 .inner-container {
+    margin: unset;
+  }
+  .component-5 .inner-container div:nth-child(2) p {
+    padding: 0 48px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .component-5 {
+    padding: 71px 37px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .component-5 {
+    padding: 71px 37px;
+  }
+  .component-5 .inner-2 > div {
+    flex-direction: column;
+  }
+  .component-5 .inner-container div:nth-child(2),
+  .component-5 .inner-container div:nth-child(2) p {
+    padding: unset;
+  }
+  .component-5 .inner-1 {
+    margin-bottom: 73px;
+  }
 }
