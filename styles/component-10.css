@@ -35,13 +35,7 @@
   height: 32px;
   position: relative;
 }
-.component-10 button span {
-  display: inline-block;
-  position: absolute;
-  bottom: 50%;
-  height: 20px;
-  width: 85px;
-}
+
 .component-10 .inner-box {
   height: 39px;
 }

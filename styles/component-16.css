@@ -29,6 +29,10 @@
   gap: 30px;
   height: 100%;
 }
+
+.component-16 li {
+  border-top: 2px solid transparent;
+}
 .component-16 li:hover {
   border-top: 2px solid var(--main-green-color);
   color: var(--main-green-color);

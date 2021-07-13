@@ -26,8 +26,15 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 .component-3 p {
   margin-top: 12.5px;
 }
+
+.component-3 .container > div:hover img {
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 var(--main-green-color));
+  filter: opacity(0.5) drop-shadow(0 0 0  var(--main-green-color);
+}
+
