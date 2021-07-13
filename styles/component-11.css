@@ -28,10 +28,31 @@
   margin-left: 52px;
   padding-top: 38px;
 }
-.component-11 a:hover {
-  opacity: 0.4;
-}
+
 .component-11 .below-part {
   margin-top: 52px;
   margin-right: 99px;
+}
+.component-11 a,
+.component-15 .inner-3 a {
+  position: relative;
+}
+.component-11 a i,
+.component-15 .inner-3 a i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-green-color);
+  transition: all 0.2s ease-out;
+  opacity: 0;
+}
+
+.component-11 a:hover i {
+  opacity: 1;
+  right: -30%;
+}
+.component-15 .inner-3 a:hover i {
+  right: -20%;
+  opacity: 1;
 }

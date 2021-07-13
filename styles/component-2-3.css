@@ -1,0 +1,209 @@
+.component-2 {
+  height: 90px;
+  padding: 37px 457px 37.3px 375px;
+  justify-content: start;
+  color: var(--medium-grey-color);
+  box-shadow: 0 11px 7px -10px #00000017;
+}
+.component-2 nav {
+  margin-left: 151px;
+}
+.component-2 .logo a {
+  gap: 14px;
+}
+.component-2 nav a:hover {
+  color: var(--main-green-color);
+  transition: all 0.2s ease-out;
+}
+
+.component-2 .logo span {
+  color: var(--dark-grey-secondary);
+  font-size: 35.69px;
+  line-height: 13.77px;
+}
+.component-2 li {
+  line-height: 19px;
+}
+.component-2 li:not(:last-child) {
+  margin-right: 46.3px;
+}
+
+.component-3 {
+  height: 434px;
+  padding: 72px 336px 0 379px;
+  text-align: center;
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.component-3 .container {
+  margin-right: 26px;
+}
+.component-3 .boxes {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 63px 0;
+}
+
+.component-3 .box {
+  border: 1px solid #dbe7ef;
+  border-radius: 3px;
+  padding: 50.8px 38.6px;
+  position: relative;
+  bottom: 9px;
+  height: 210px;
+  width: 270px;
+}
+.component-3 .container > div:not(:last-child) {
+  margin-right: 30px;
+}
+
+.component-3 .box img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.component-3 p {
+  margin-top: 12.5px;
+}
+
+.component-3 .box:hover img {
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 var(--main-green-color));
+  filter: opacity(0.5) drop-shadow(0 0 0 var(--main-green-color));
+}
+/* mobile nav */
+.mobile-nav .component-2 {
+  display: inline-block;
+}
+.mobile-nav {
+  height: 100%;
+  color: #fff;
+
+  background-image: linear-gradient(95.2deg, #eef0f3 26.8%, #8fd6c99e 64%);
+  box-shadow: rgb(0 0 0 / 15%) 6.95px 0 2.6px;
+}
+.mobile-nav .logo {
+  margin-bottom: 35px;
+}
+
+.component-3 {
+  position: relative;
+}
+.mobile-nav {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-out;
+}
+.mobile-nav .component-2 {
+  height: 100%;
+}
+.mobile-nav ul {
+  gap: 27px;
+  color: var(--dark-grey-color);
+}
+
+@media only screen and (max-width: 1919px) {
+  .component-2 {
+    padding: unset;
+    justify-content: center;
+  }
+  .component-3,
+  .component-3 .box {
+    height: unset;
+  }
+  .component-3 {
+    padding: 135px;
+  }
+  .component-3 .box {
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .component-2 nav {
+    margin-left: 63px;
+  }
+  .component-2 li:not(:last-child) {
+    margin-right: 39.3px;
+  }
+  .component-3 {
+    padding: 100px 70px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .component-3 {
+    padding: 0;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav .component-3 .container > div,
+  .component-3 {
+    height: unset;
+  }
+  .mobile-nav .component-2 li:not(:last-child) {
+    margin-right: unset;
+  }
+
+  .mobile-nav > div {
+    gap: 20px;
+    padding: 30px 10px;
+    height: 100%;
+  }
+  .component-3 {
+    margin-right: unset;
+  }
+  .mobile-nav nav {
+    margin-left: unset;
+  }
+  .mobile-nav {
+    transform: translateX(0%);
+  }
+  .component-3 .boxes {
+    flex-direction: column;
+    margin-left: auto;
+    padding-right: 32px;
+    padding-bottom: 17px;
+    flex-basis: 74%;
+  }
+  .component-3 .box {
+    padding: 10.8px 38.6px;
+  }
+  .component-3 .container {
+    margin-right: unset;
+    flex: unset;
+  }
+  .component-3 .box img {
+    top: -9px;
+    width: 47px;
+    height: 47px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .component-2 .logo span {
+    font-size: 25.69px;
+  }
+  .mobile-nav > div {
+    padding: 30px 5px;
+  }
+  .mobile-nav ul {
+    gap: 36px;
+  }
+  .component-3 .boxes p {
+    font-size: 13px;
+  }
+  .component-3 .boxes h6 {
+    font-size: 16px;
+  }
+  .component-3 .boxes {
+    padding-right: 13px;
+    flex-basis: 63%;
+  }
+}

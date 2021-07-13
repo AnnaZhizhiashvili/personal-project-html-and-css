@@ -33,7 +33,7 @@
 .component-10 button {
   width: 120px;
   height: 32px;
-  position: relative;
+  /* position: relative; */
 }
 
 .component-10 .inner-box {
@@ -58,10 +58,6 @@
 .component-10 .box:not(:first-child):hover {
   cursor: pointer;
   transform: translateY(-20px);
-}
-
-.component-10 button:hover {
-  background-color: #3a3e4a;
 }
 
 .component-10 .inner-1 {

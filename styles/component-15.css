@@ -95,6 +95,7 @@
 }
 .component-15 .inner-2 .visualisation:hover {
   background-color: var(--main-green-color);
+  cursor: pointer;
 }
 .component-15 .visualisation:hover + p {
   color: #fff;
@@ -129,6 +130,7 @@
   background-color: var(--medium-grey-color);
   border: 3px solid #fff;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .component-15 .inner-3 .about {
@@ -145,7 +147,12 @@
   margin-top: 26px;
 }
 
-.component-15 .inner-3 a:hover {
+.component-15 .inner-3 a:hover,
+.component-11 a:hover {
   transform: scale(0.95);
   opacity: 0.95;
+}
+
+.component-15 .search button:hover i {
+  transform: scale(0.8);
 }

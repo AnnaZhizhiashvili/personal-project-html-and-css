@@ -56,3 +56,9 @@
   background-color: var(--dark-grey-secondary);
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1919px) {
+  .component-12 .inner-2 {
+    margin-left: unset;
+  }
+}
