@@ -208,6 +208,8 @@
   }
   .component-15 .inner-2 .box {
     width: unset;
+    height: unset;
+    align-items: center;
   }
   .component-15 .wrap button {
     width: 25px;

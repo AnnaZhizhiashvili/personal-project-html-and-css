@@ -205,10 +205,11 @@
       font-size: 10px;
   }
     .component-7 .inner-2 {
-      height: 97px;
+      height: unset;
       overflow: hidden;
       flex-wrap: wrap;
       gap: 11px;
+      white-space: nowrap;
     }
     .component-7 .inner-3 {
       width: 90%;

@@ -18,7 +18,7 @@
   padding-left: 3px;
 }
 .component-6 .box-2 h6 {
-  padding-left: 3px;
+  padding-left: 9px;
 }
 .component-6 .box-3 h6 {
   padding-left: 10px;
@@ -53,9 +53,7 @@
 .component-6 .box-3 p {
   padding-left: 11px;
 }
-.component-6 .box-4 h6 {
-  padding-left: 21px;
-}
+
 .component-6 .box:hover {
   background-color: var(--light-grey-color);
   cursor: pointer;

@@ -155,4 +155,19 @@
     flex-wrap: wrap;
     gap: 15px;
   }
+  .component-10 {
+    padding-top: 25px;
+  }
+  .component-9 .box > div {
+    height: unset;
+  }
+  .component-10 .inner-1 {
+    margin-bottom: 40px;
+  }
+  .component-10 .box {
+    flex-basis: 88%;
+  }
+  .component-12 .inner-2 {
+    gap: 91px;
+  }
 }
