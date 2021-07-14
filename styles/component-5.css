@@ -110,9 +110,9 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 765px) {
   .component-5 {
-    padding: 71px 37px;
+    padding: 64px 13px;
   }
   .component-5 .inner-2 > div {
     flex-direction: column;
@@ -123,5 +123,8 @@
   }
   .component-5 .inner-1 {
     margin-bottom: 73px;
+  }
+  .component-5 h5 {
+    line-height: unset;
   }
 }

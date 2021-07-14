@@ -57,9 +57,14 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1919px) {
   .component-11 {
     padding-left: unset;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .component-11 {
     height: unset;
     padding-bottom: 60px;
   }
@@ -88,6 +93,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .component-11 {
+    padding-top: unset;
+  }
   .component-11 .boxes {
     width: unset;
     justify-content: center;
@@ -100,5 +108,20 @@
   .component-11 h5 {
     font-size: 32px;
     text-align: center;
+    line-height: unset;
+  }
+  .component-11 h6 {
+    line-height: unset;
+  }
+  .component-11 .box img {
+    max-width: 35px;
+    max-height: 40px;
+  }
+  .component-12 .visual {
+    width: 55%;
+    min-height: 100px;
+  }
+  .component-12 .box {
+    flex-direction: column;
   }
 }

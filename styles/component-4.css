@@ -88,4 +88,10 @@
   .component-4 .inner-2 img {
     width: 100%;
   }
+  .component-4 h5 {
+    line-height: unset;
+  }
+  .component-4 .container {
+    padding: 40px;
+  }
 }

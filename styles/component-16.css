@@ -37,3 +37,51 @@
   border-top: 2px solid var(--main-green-color);
   color: var(--main-green-color);
 }
+
+@media only screen and (max-width: 1919px) {
+  .component-16 .container {
+    padding-left: unset;
+    padding-bottom: unset;
+    gap: 100px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .component-16 .container {
+    gap: 73px;
+  }
+  .component-16 ul {
+    gap: 14px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .component-16 .container {
+    gap: 73px;
+  }
+  .component-16 ul {
+    gap: 14px;
+  }
+  .component-16 .inner-1,
+  .component-16 .inner-2 li {
+    font-size: 10px;
+  }
+  .component-16 .container {
+    gap: 29px;
+  }
+  .component-16 ul {
+    gap: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-16 .container {
+    flex-direction: column;
+  }
+  .component-16 .inner-2 {
+    order: -1;
+  }
+  .component-16 {
+    height: unset;
+  }
+}

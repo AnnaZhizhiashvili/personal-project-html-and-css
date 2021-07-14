@@ -107,4 +107,10 @@
   .component-6 .inner-2 {
     flex-direction: column;
   }
+  .component-6 h5 {
+    line-height: unset;
+  }
+  .component-6 {
+    padding: 59px 27px;
+  }
 }

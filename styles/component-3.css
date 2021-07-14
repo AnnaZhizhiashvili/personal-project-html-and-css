@@ -79,6 +79,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .component-3 .container {
+    margin-right: unset;
+  }
   .component-3 .boxes p {
     font-size: 13px;
   }
@@ -87,9 +90,10 @@
   }
   .component-3 .box {
     flex-basis: 70%;
-    padding: 16.8px 27.6px;
+    padding: 12.8px 15.6px;
   }
+
   .component-3 {
-    padding: 98px 49px;
+    padding: 60px 0;
   }
 }

@@ -38,6 +38,17 @@
   margin-left: 27px;
 }
 
+@media only screen and (max-width: 1919px) {
+  .component-8 .inner-1 {
+    padding-left: unset;
+  }
+  .component-8 .inner-2 {
+    width: unset;
+  }
+  .component-8 .inner-3 {
+    margin-left: 20px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .component-8 .inner-2 {
     width: 80%;
@@ -53,5 +64,15 @@
   .component-8 p {
     font-size: 10px;
     line-height: 19px;
+  }
+  .component-8 h5 {
+    line-height: unset;
+  }
+  .component-8 .inner-4 {
+    margin-top: unset;
+    margin-left: unset;
+  }
+  .component-8 .inner-3 {
+    margin-left: unset;
   }
 }

@@ -151,36 +151,68 @@
   }
   .component-7 .inner-2 {
     padding-left: unset;
-}
+  }
 
-@media only screen and (max-width: 1024px) {
-  .component-7 ul li,
-  .component-7 ul li:first-child,
-  .component-7 ul li:nth-child(2),
-  .component-7 li:nth-child(3),
-  .component-7 li:nth-child(4),
-  .component-7 li:nth-child(5) {
-    margin-right: 18px;
-    font-size: 11px;
+  @media only screen and (max-width: 1024px) {
+    .component-7 ul li,
+    .component-7 ul li:first-child,
+    .component-7 ul li:nth-child(2),
+    .component-7 li:nth-child(3),
+    .component-7 li:nth-child(4),
+    .component-7 li:nth-child(5) {
+      margin-right: 18px;
+      font-size: 11px;
+    }
+    .component-7 button {
+      font-size: 10px;
+      width: 95px;
+      height: 34px;
+    }
   }
-  .component-7 button {
-    font-size: 10px;
-    width: 95px;
-    height: 34px;
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .component-7 ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .component-7 .inner-3 {
-    width: 70%;
+  @media only screen and (max-width: 768px) {
+    .component-7 {
+      height: unset;
+    }
+    .component-7 ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .component-7 p {
+      font-size: 12px;
+    }
+    .component-7 .inner-1 {
+      padding-left: unset;
+    }
 
+    .component-7 ul li,
+    .component-7 ul li:first-child,
+    .component-7 ul li:nth-child(2),
+    .component-7 li:nth-child(3),
+    .component-7 li:nth-child(4),
+    .component-7 li:nth-child(5) {
+      margin-right: 8px;
+    
+    }
+    .component-7 button {
+      font-size: 9px;
+      width: 62px;
+      height: 31px;
+    }
+    .component-7 ul li {
+      flex-basis: 17%;
+      font-size: 10px;
   }
-  .component-7 p {
-    font-size: 12px;
+    .component-7 .inner-2 {
+      height: 97px;
+      overflow: hidden;
+      flex-wrap: wrap;
+      gap: 11px;
+    }
+    .component-7 .inner-3 {
+      width: 90%;
+      height: 543px;
+     
   }
-  
 }

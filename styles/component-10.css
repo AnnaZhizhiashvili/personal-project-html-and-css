@@ -140,6 +140,7 @@
   }
   .component-10 h5 {
     font-size: 17px;
+    line-height: unset;
   }
   .component-10 button span {
     font-size: 16px;

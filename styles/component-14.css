@@ -18,6 +18,31 @@
 }
 .component-14 img:hover {
   -webkit-filter: opacity(0.5) drop-shadow(0 0 0 var(--main-green-color));
-  filter: opacity(0.5) drop-shadow(0 0 0  var(--main-green-color);
+  filter: opacity(0.5) drop-shadow(0 0 0 var(--main-green-color));
 }
 
+@media only screen and (max-width: 1280px) {
+  .component-14 ul {
+    justify-content: space-around;
+    gap: unset;
+  }
+  .component-14 .container {
+    padding-left: unset;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .component-14 h5 {
+    line-height: unset;
+  }
+  .component-14 ul {
+    flex-wrap: wrap;
+  }
+  .component-14 ul li {
+    flex-basis: 12%;
+  }
+  .component-14 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

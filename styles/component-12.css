@@ -120,7 +120,15 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .component-12 .container {
+    padding-top: 39px;
+    padding-bottom: 131px;
+  }
   .component-12 .inner-1 p {
     padding: 0px 23px;
+  }
+  .component-12 .inner-2 {
+    width: unset;
+    gap: 145px;
   }
 }

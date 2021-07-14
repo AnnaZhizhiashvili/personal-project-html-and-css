@@ -109,4 +109,18 @@
   .component-9 .box-1 {
     text-align: start;
   }
+  .component-9 h5 {
+    line-height: unset;
+    font-size: 20px;
+  }
+  .component-9 p {
+    font-size: 10px;
+  }
+  .component-9 h6 {
+    font-size: 16px;
+  }
+  .component-9 .g-box {
+    width: 32px;
+    height: 32px;
+  }
 }
