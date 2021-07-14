@@ -124,3 +124,9 @@
 .component-13 button:hover {
   opacity: 0.7;
 }
+
+@media only screen and (max-width: 1280px) {
+  .component-13 .container {
+    flex-direction: column;
+  }
+}

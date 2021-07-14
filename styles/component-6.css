@@ -1,54 +1,110 @@
-
-
 .component-6 {
-    height: 540px;
-    text-align: center;
-    padding-top: 104px;
+  height: 540px;
+  text-align: center;
+  padding-top: 104px;
 }
 
 .component-6 h5 {
-    padding-left: 19px;
-    margin-bottom: 24px;
+  padding-left: 19px;
+  margin-bottom: 24px;
 }
 .component-6 .inner-1 {
-    margin-bottom: 44px;
+  margin-bottom: 44px;
 }
 .component-6 .inner-1 p {
-    padding-left: 18px;
+  padding-left: 18px;
+}
+.component-6 .box-1 h6 {
+  padding-left: 3px;
+}
+.component-6 .box-2 h6 {
+  padding-left: 3px;
+}
+.component-6 .box-3 h6 {
+  padding-left: 10px;
+}
+.component-6 .box-4 h6 {
+  padding-left: 17px;
 }
 
 .component-6 .box {
-    justify-content:flex-start;
-    flex-grow: 1;
-    border: 1px solid #ECF0F1; 
-    padding-top: 148px;
-    padding-left: 6px;
-    height: 301px;
-    position: relative;
-    transition: all .2s ease-out;
-
+  justify-content: flex-start;
+  flex-grow: 1;
+  border: 1px solid #ecf0f1;
+  padding-top: 146px;
+  padding-left: 9px;
+  height: 301px;
+  position: relative;
+  transition: all 0.2s ease-out;
 }
 .component-6 .box img {
-    position: absolute;
-    top: 15.5%;
-    left: 46.5%;
+  position: absolute;
+  top: 15.5%;
+  left: 46.5%;
 }
 
 .component-6 .box h6 {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .component-6 .box-2 p {
-    padding-left: 7px;
+  padding-left: 7px;
 }
 .component-6 .box-3 p {
-    padding-left: 11px;
+  padding-left: 11px;
 }
 .component-6 .box-4 h6 {
-    padding-left: 21px;
+  padding-left: 21px;
 }
 .component-6 .box:hover {
-    background-color: var(--light-grey-color);
-    cursor: pointer;
-    transform: translateY(-3px);
+  background-color: var(--light-grey-color);
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 1280px) {
+  .component-6 {
+    height: unset;
+    padding: 60px;
+  }
+  .component-6 h5,
+  .component-6 .inner-1 p {
+    padding-left: unset;
+  }
+  .component-6 .box {
+    padding-left: unset;
+    height: unset;
+  }
+  .component-6 .box img {
+    position: absolute;
+    top: 15.5%;
+    left: 46.5%;
+  }
+  .component-6 .box img {
+    position: absolute;
+    top: 15.5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .component-6 .box-4 h6 {
+    padding-left: unset;
+  }
+  .component-6 .box {
+    padding: 146px 10px 8px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .component-6 .inner-2 {
+    flex-wrap: wrap;
+  }
+  .component-6 .inner-2 .box {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .component-6 .inner-2 {
+    flex-direction: column;
+  }
 }
