@@ -38,6 +38,7 @@
   width: 1273px;
   gap: 14px;
   margin-left: 330px;
+  @extend .flex-centering;
 }
 .component-12 .inner-1 {
   text-align: center;
@@ -53,85 +54,8 @@
   transition: all 0.2s ease-out;
 }
 .component-12 .visual:hover {
-  background-color: var(--dark-grey-secondary);
+  background-color: $dark-grey-secondary;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1919px) {
-  .component-12 .inner-2 {
-    margin-left: unset;
-    margin: 0 auto;
-  }
-  .component-12 .inner-1 {
-    padding-left: unset;
-  }
-}
-
-@media only screen and (max-width: 1292px) {
-  .component-12 br {
-    display: none;
-  }
-  .component-12 {
-    padding-bottom: 41px;
-    height: unset;
-  }
-  .component-12 .inner-2 {
-    width: unset;
-    gap: 40px;
-  }
-  .component-12 .box {
-    min-width: unset;
-    flex-basis: 33.3%;
-  }
-  .component-12 h6,
-  .component-12 .description > div {
-    position: static;
-  }
-  .component-12 .visual {
-    min-width: 40%;
-  }
-  .component-12 .inner-1 p {
-    padding: 0 99px;
-  }
-  .component-12 .inner-2 .box:nth-child(1),
-  .component-12 .inner-2 .box:nth-child(2),
-  .component-12 .inner-2 .box:nth-child(3) {
-    margin-bottom: unset;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .component-12 h6 {
-    font-size: 15px;
-  }
-  .component-12 span {
-    font-size: 13px;
-  }
-  .component-12 .box {
-    flex-basis: 70%;
-  }
-  .component-12 .visual {
-    min-width: unset;
-    width: 35%;
-  }
-  .component-12 .description {
-    flex-basis: 64%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .component-12 .container {
-    padding-top: 39px;
-    padding-bottom: 131px;
-  }
-  .component-12 .inner-1 p {
-    padding: 0px 23px;
-  }
-  .component-12 .inner-2 {
-    width: unset;
-    gap: 145px;
-  }
-  .component-12 .visual {
-    width: unset;
-  }
-}
+@import "./responsive-12";

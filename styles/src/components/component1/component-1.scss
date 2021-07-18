@@ -4,7 +4,7 @@
 
 .component-1 {
   position: relative;
-  background-color: var(--dark-grey-color);
+  background-color: $dark-grey;
   color: #fff;
   height: 1280px;
   .container {
@@ -19,14 +19,10 @@
       letter-spacing: 0.3em;
       margin-bottom: 18px;
       padding-left: 11px;
-      @include texts((Lato-Regular, sans-serif), 30px, 19px);
-    }
-    & p:nth-child(2) {
-      @include texts((Lato-Black, sans-serif), 60px, normal);
+      white-space: nowrap;
     }
     & p:nth-child(3) {
       margin-top: 11px;
-      @include texts((Lato-Light, sans-serif), 30px, 36px);
     }
   }
 }
@@ -40,7 +36,6 @@
     border: 1px solid #fff;
     cursor: pointer;
     transition-duration: 0.2s;
-    @include texts((Lato-Black, sans-serif), 18px, 19px);
     &:not(:last-child) {
       margin-right: 15px;
     }

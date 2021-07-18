@@ -1,130 +1,75 @@
 .component-5 {
-  background-color: var(--dark-grey-color);
+  background-color: $dark-grey;
   height: 700px;
-  color: #fff;
+  color: $color-white;
   text-align: center;
-  border-bottom: 7px solid var(--medium-grey-color);
-}
-.component-5 .container {
-  padding: 103px 0 0 17px;
-}
+  border-bottom: 7px solid $medium-grey;
 
-.component-5 .circle {
-  background-color: #fff;
-  width: 199px;
-  height: 197px;
-  border-radius: 50%;
-  position: relative;
-  border: 6px solid var(--main-green-color);
-  margin-bottom: 19.4px;
-  transition: all 0.2s ease-out;
-}
-.component-5 .circle span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 55%;
-  border-radius: 50%;
-  height: 55%;
-  background-color: var(--light-grey-color);
-  color: #4e4e4e;
-  transition: all 0.2s ease-out;
-}
+  .container {
+    padding: 103px 0 0 17px;
+    @extend .flex-centering;
+  }
 
-.component-5 .inner-1 {
-  width: 630.7px;
-  height: 113.69px;
-  margin-bottom: 35px;
-}
-.component-5 .inner-1 p {
-  padding-right: 2px;
-}
-.component-5 .inner-container {
-  width: 270.32px;
-  margin-right: 30px;
-}
-.component-5 h6 {
-  margin-bottom: 5.5px;
-}
-.component-5 .inner-container p {
-  padding-left: 3px;
-}
-.component-5 h5 {
-  margin-bottom: 24px;
-}
-.component-5 .inner-2 {
-  margin-left: 28px;
-}
-.component-5 .circle:hover {
-  cursor: pointer;
-  border: 6px solid #21c2f8;
-  transform: translateY(-4px);
-}
+  .circle {
+    background-color: $color-white;
+    width: 199px;
+    height: 197px;
+    border-radius: 50%;
+    position: relative;
+    border: 6px solid $main-green-color;
+    margin-bottom: 19.4px;
+    transition: all 0.2s ease-out;
 
-.component-5 .circle:hover span {
-  background-color: var(--dark-grey-secondary);
-  color: #fff;
-}
+    &:hover {
+      cursor: pointer;
+      border: 6px solid #21c2f8;
+      transform: translateY(-4px);
 
-@media only screen and (max-width: 1280px) {
-  .component-5 {
-    height: unset;
-    padding: 76px;
+      & span {
+        background-color: var(--dark-grey-secondary);
+        color: #fff;
+      }
+    }
+
+    span {
+      @extend .position-center;
+      width: 55%;
+      border-radius: 50%;
+      height: 55%;
+      background-color: $light-grey;
+      color: #4e4e4e;
+      transition: all 0.2s ease-out;
+      @extend .flex-centering;
+    }
   }
-  .component-5 .inner-1 {
-    height: unset;
-    width: unset;
+
+  .inner-1 {
+    width: 630.7px;
+    height: 113.69px;
+    margin-bottom: 35px;
+
+    p {
+      padding-right: 2px;
+    }
   }
-  .component-5 .inner-2 {
-    margin-left: unset;
+
+  .inner-container {
+    width: 270.32px;
+    margin-right: 30px;
+
+    p {
+      padding-left: 3px;
+    }
   }
-  .component-5 .inner-2 > div {
-    flex-wrap: wrap;
-    gap: 40px;
+  h6 {
+    margin-bottom: 5.5px;
   }
-  .component-5 .inner-2 .inner-container {
-    flex-basis: 44%;
+  h5 {
+    margin-bottom: 24px;
   }
-  .component-5 .inner-2 .inner-container:nth-child(2),
-  .component-5 .inner-2 .inner-container:nth-child(3) {
-    margin-right: unset;
-  }
-  .component-5 .inner-container div:nth-child(2) {
-    padding: 5px 20px;
-  }
-  .component-5 .container {
-    padding: unset;
-  }
-  .component-5 .inner-container {
-    margin: unset;
-  }
-  .component-5 .inner-container div:nth-child(2) p {
-    padding: 0 48px;
+  .inner-2 {
+    margin-left: 28px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .component-5 {
-    padding: 71px 37px;
-  }
-}
-
-@media only screen and (max-width: 765px) {
-  .component-5 {
-    padding: 64px 13px;
-  }
-  .component-5 .inner-2 > div {
-    flex-direction: column;
-  }
-  .component-5 .inner-container div:nth-child(2),
-  .component-5 .inner-container div:nth-child(2) p {
-    padding: unset;
-  }
-  .component-5 .inner-1 {
-    margin-bottom: 73px;
-  }
-  .component-5 h5 {
-    line-height: unset;
-  }
-}
+@import "./responsive-5";

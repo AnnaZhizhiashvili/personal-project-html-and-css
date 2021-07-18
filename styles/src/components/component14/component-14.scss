@@ -1,48 +1,26 @@
 .component-14 {
   height: 106px;
-  background-color: var(--dark-grey-color);
+  background-color: $dark-grey;
   border-top: 2px solid #fff;
   box-shadow: inset 0 0 5px #707070;
-}
 
-.component-14 .container {
-  padding-top: 34px;
-  padding-left: 15px;
-}
-.component-14 ul {
-  gap: 76px;
-}
+  .container {
+    padding-top: 34px;
+    padding-left: 15px;
 
-.component-14 img {
-  transition: all 0.2s ease-out;
-}
-.component-14 img:hover {
-  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 var(--main-green-color));
-  filter: opacity(0.5) drop-shadow(0 0 0 var(--main-green-color));
-}
+    ul {
+      @extend .flex-centering;
+      gap: 76px;
 
-@media only screen and (max-width: 1280px) {
-  .component-14 ul {
-    justify-content: space-around;
-    gap: unset;
-  }
-  .component-14 .container {
-    padding-left: unset;
+      img {
+        transition: all 0.2s ease-out;
+        &:hover {
+          -webkit-filter: opacity(0.5) drop-shadow(0 0 0 $main-green-color);
+          filter: opacity(0.5) drop-shadow(0 0 0 $main-green-color);
+        }
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .component-14 h5 {
-    line-height: unset;
-  }
-  .component-14 ul {
-    flex-wrap: wrap;
-  }
-  .component-14 ul li {
-    flex-basis: 12%;
-  }
-  .component-14 {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
+@import "./responsive-14";

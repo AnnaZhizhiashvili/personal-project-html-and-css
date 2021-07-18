@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1919px) {
+  .component-3 {
+    height: unset;
+    padding: 135px;
+
+    .box {
+      height: unset;
+      width: unset;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .component-3 {
+    padding: 100px 70px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .component-3 {
+    .boxes {
+      flex-wrap: wrap;
+      gap: 68px;
+
+      .box {
+        padding: 58.8px 36.6px;
+        flex-basis: 40%;
+
+        img {
+          top: -9px;
+          width: 47px;
+          height: 47px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .component-3 {
+    padding: 60px 0;
+    .component-3 .container {
+      margin-right: unset;
+
+      .boxes {
+        .box {
+          flex-basis: 70%;
+          padding: 12.8px 15.6px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+        h6 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

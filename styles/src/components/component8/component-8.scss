@@ -40,6 +40,7 @@
   height: 148px;
   margin-left: 18px;
   margin-bottom: 35px;
+  @extend .flex-centering;
 }
 .component-8 .inner-3 {
   margin-left: 20px;

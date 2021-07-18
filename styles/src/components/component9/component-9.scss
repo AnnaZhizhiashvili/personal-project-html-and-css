@@ -9,6 +9,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  @extend .flex-centering;
 }
 
 .box-like {
@@ -35,6 +36,7 @@
 
 .component-9 .box-upper {
   margin-bottom: 9px;
+  @extend .flex-centering;
 }
 .component-9 .box-1 .box-upper {
   justify-content: flex-end;
@@ -54,6 +56,7 @@
 .component-9 .inner-2 {
   margin-left: 16px;
   gap: 62px;
+  @extend .flex-centering;
 }
 .component-9 .box-1,
 .component-9 .box-3 {

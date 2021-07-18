@@ -4,108 +4,45 @@
   text-align: center;
   box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
-}
-.component-3 .container {
-  margin-right: 26px;
-}
-.component-3 .boxes {
-  display: flex;
-  gap: 30px;
-  justify-content: space-around;
-  align-items: center;
-  /* padding: 63px 0; */
-}
-
-.component-3 .box {
-  border: 1px solid #dbe7ef;
-  border-radius: 3px;
-  padding: 50.8px 38.6px;
   position: relative;
-  bottom: 9px;
-  height: 210px;
-  width: 270px;
-}
-.component-3 .container > div:not(:last-child) {
-  margin-right: 30px;
-}
 
-.component-3 .box img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  p {
+    margin-top: 12.5px;
+  }
+  .container {
+    margin-right: 26px;
+    @extend .flex-centering;
 
-.component-3 p {
-  margin-top: 12.5px;
-}
+    & > div:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 
-.component-3 .box:hover img {
-  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 var(--main-green-color));
-  filter: opacity(0.5) drop-shadow(0 0 0 var(--main-green-color));
-}
-.component-3 {
-  position: relative;
-}
-@media only screen and (max-width: 1919px) {
-  .component-3,
-  .component-3 .box {
-    height: unset;
-  }
-  .component-3 {
-    padding: 135px;
-  }
-  .component-3 .box {
-    width: unset;
-  }
-}
+  .boxes {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
 
-@media only screen and (max-width: 1280px) {
-  .component-3,
-  .component-3 .box {
-    height: unset;
-  }
-  .component-3 .box {
-    width: unset;
-  }
-  .component-3 {
-    padding: 100px 70px;
+    .box {
+      border: 1px solid #dbe7ef;
+      border-radius: 3px;
+      padding: 50.8px 38.6px;
+      position: relative;
+      bottom: 9px;
+      height: 210px;
+      width: 270px;
+      img {
+        @include position(0, 50);
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover img {
+        -webkit-filter: opacity(0.5) drop-shadow(0 0 0 $main-green-color);
+        filter: opacity(0.5) drop-shadow(0 0 0 $main-green-color);
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .component-3 .box {
-    padding: 58.8px 36.6px;
-    flex-basis: 40%;
-  }
-
-  .component-3 .box img {
-    top: -9px;
-    width: 47px;
-    height: 47px;
-  }
-  .component-3 .boxes {
-    flex-wrap: wrap;
-    gap: 68px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .component-3 .container {
-    margin-right: unset;
-  }
-  .component-3 .boxes p {
-    font-size: 13px;
-  }
-  .component-3 .boxes h6 {
-    font-size: 16px;
-  }
-  .component-3 .box {
-    flex-basis: 70%;
-    padding: 12.8px 15.6px;
-  }
-
-  .component-3 {
-    padding: 60px 0;
-  }
-}
+@import "./responsive-3";

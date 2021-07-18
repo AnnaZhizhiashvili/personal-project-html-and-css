@@ -19,6 +19,28 @@
   src: url(../../fonts/Lato-Light.ttf);
 }
 
+/* line-heights */
+
+$line-heights-list: 19, 20, 21, 24, 27, 30, 36, 40;
+
+@for $i from 1 through length($line-heights-list) {
+  .line-height-#{nth($line-heights-list, $i)} {
+    line-height: nth($line-heights-list, $i) + px;
+  }
+}
+
+// font-sizes
+
+$font-sizes-list: 14, 15, 16, 18, 24, 30, 36, 48, 60;
+
+@each $item in $font-sizes-list {
+  .font-#{$item} {
+    font-size: $item + px;
+  }
+}
+
+// colors
+
 :root {
   --dark-grey-color: #222533;
   --dark-grey-secondary: #2c3e50;
@@ -28,43 +50,118 @@
   --light-grey-secondary: #eaebec;
   --main-green-color: #1abc9c;
 }
+
 $dark-grey: #222533;
-$dark-grey: #2c3e50;
+$dark-grey-secondary: #2c3e50;
 $medium-grey: #a1b1bc;
 $medium-grey-secondary: #34495e;
 $light-grey: #ecf0f1;
 $light-grey-secondary: #eaebec;
 $main-green-color: #1abc9c;
-.flex {
-  display: flex;
-}
-.flex-centering {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.space-between {
-  justify-content: space-between;
-}
-.flex-column {
-  flex-direction: column;
+$color-white: #fff;
+
+.background-gradient {
+  background: linear-gradient(45deg, #1dd1ad, #45d0ff);
 }
 
-.center {
-  margin: 0 auto;
+$colors: (
+  color-white: $color-white,
+  green-table: #7bc200,
+  red-table: #ef584d,
+  color-light-grey: $light-grey,
+  color-medium-grey: $medium-grey,
+  color-secondary-grey: $dark-grey-secondary,
+  color-green: $main-green-color,
+);
+
+@each $color-class, $color in $colors {
+  .#{$color-class} {
+    color: $color;
+  }
 }
 
-.position-center {
-  position: absolute;
+$background-colors: (
+  background-medium-grey: $medium-grey,
+  background-light-grey: $light-grey,
+  background-medium-secondary: $medium-grey-secondary,
+  background-green: $main-green-color,
+);
+
+$background-colors: (
+  background-medium-grey: #a1b1bc,
+  background-light-grey: #ecf0f1,
+  background-medium-secondary: #34495e,
+  background-green: #1abc9c,
+);
+
+@each $background-class, $color in $background-colors {
+  .#{$background-class} {
+    background-color: $color;
+  }
+}
+
+//  font-family
+$font-family: (
+  lato-bold: Lato-Bold,
+  lato-light: Lato-Light,
+  lato-regular: Lato-Regular,
+  lato-black: Lato-Black,
+);
+
+@each $class-name, $font-family-value in $font-family {
+  .#{$class-name} {
+    font-family: $font-family-value;
+  }
+}
+
+@mixin texts($font-family, $font-size, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin checkmark-before {
+  content: "";
+  background-color: var(--main-green-color);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
   top: 50%;
-  left: 50;
+  left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
+  display: none;
+  transition-duration: 0.2s;
 }
 
-.transition {
-  transition: all 0.2s ease-out;
+@mixin checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
 }
-/* button */
+@mixin radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+@mixin form-label {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+}
+
+@mixin position($x: 50, $y: 50) {
+  position: absolute;
+  top: $x;
+  left: $y;
+}
+
+//  buttons
 
 button {
   transition: all 0.2s ease-out;
@@ -126,165 +223,34 @@ button {
   position: relative;
 }
 
-/* font-families */
-.lato-black {
-  font-family: Lato-Black, sans-serif;
+// shared classes
+
+.flex {
+  display: flex;
 }
-.lato-bold {
-  font-family: Lato-Bold, sans-serif;
+.flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.lato-light {
-  font-family: Lato-Light, sans-serif;
+.space-between {
+  justify-content: space-between;
 }
-.lato-regular {
-  font-family: Lato-Regular, sans-serif;
+.flex-column {
+  flex-direction: column;
 }
 
-/* font-sizes */
-
-.font-14 {
-  font-size: 14px;
-}
-.font-15 {
-  font-size: 15px;
-}
-.font-16 {
-  font-size: 16px;
+.center {
+  margin: 0 auto;
 }
 
-.font-18 {
-  font-size: 18px;
-}
-.font-24 {
-  font-size: 24px;
-}
-.font-30 {
-  font-size: 30px;
-}
-
-.font-36 {
-  font-size: 36px;
-}
-
-.font-48 {
-  font-size: 48px;
-}
-.font-60 {
-  font-size: 60px;
-}
-
-/* colors */
-
-.background-green {
-  background-color: var(--main-green-color);
-}
-.color-green {
-  color: var(--main-green-color);
-}
-.color-secondary-grey {
-  color: var(--dark-grey-secondary);
-}
-.color-medium-grey {
-  color: var(--medium-grey-color);
-}
-.background-medium-grey {
-  background-color: var(--medium-grey-color);
-}
-.background-light-grey {
-  background-color: var(--light-grey-color);
-}
-
-.background-medium-secondary {
-  background-color: var(--medium-grey-secondary);
-}
-.color-light-grey {
-  color: var(--light-grey-color);
-}
-.color-white {
-  color: #fff;
-}
-.green-table {
-  color: #7bc200;
-}
-.red-table {
-  color: #ef584d;
-}
-.background-gradient {
-  background: linear-gradient(45deg, #1dd1ad, #45d0ff);
-}
-
-/* line-heights */
-
-.line-height-19 {
-  line-height: 19px;
-}
-.line-height-20 {
-  line-height: 20px;
-}
-.line-height-21 {
-  line-height: 21px;
-}
-
-.line-height-24 {
-  line-height: 24px;
-}
-.line-height-27 {
-  line-height: 27px;
-}
-.line-height-30 {
-  line-height: 30px;
-}
-
-.line-height-36 {
-  line-height: 36px;
-}
-.line-height-40 {
-  line-height: 40px;
-}
-
-@mixin texts($font-family, $font-size, $line-height) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin checkmark-before {
-  content: "";
-  background-color: var(--main-green-color);
-  border-radius: 50%;
-  width: 7px;
-  height: 7px;
+.position-center {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  position: absolute;
-  display: none;
-  transition-duration: 0.2s;
 }
 
-@mixin checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #fff;
-  cursor: pointer;
-}
-@mixin radio-input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-@mixin form-label {
-  position: relative;
-  display: inline-block;
-  width: 14px;
-}
-
-@mixin position($x: 50, $y: 50) {
-  position: absolute;
-  top: $x;
-  left: $y;
+.transition {
+  transition: all 0.2s ease-out;
 }

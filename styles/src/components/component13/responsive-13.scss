@@ -1,0 +1,71 @@
+@media only screen and (max-width: 1280px) {
+  .component-13 {
+    height: unset;
+  }
+  .component-13 .container {
+    flex-direction: column;
+  }
+  .component-13 .container {
+    gap: 73px;
+  }
+  .component-13 .inner-1 p {
+    padding-left: unset;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .component-13 .below form {
+    width: unset;
+  }
+  .component-13 button,
+  .component-13 input,
+  .component-13 textarea,
+  .component-13 .inner-2 {
+    width: 80%;
+  }
+  .component-13 .upper ul {
+    gap: 2.8%;
+  }
+  .component-13 .inner-1 {
+    text-align: center;
+  }
+  .component-13 .upper ul {
+    justify-content: center;
+  }
+  .component-13 br {
+    display: none;
+  }
+  .component-13 h5 {
+    font-size: 31px;
+  }
+  .component-13 p {
+    font-size: 13px;
+    margin: 0 auto;
+  }
+  .component-13 .inner-2 .visualisation,
+  .component-13 .description {
+    flex-basis: 100%;
+  }
+  .component-13 .inner-2 .box {
+    align-items: center;
+  }
+  .component-13 .inner-2 .box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .component-13 .inner-2 .visualisation {
+    min-height: 117px;
+  }
+  .component-13 {
+    padding-bottom: 131px;
+  }
+  .component-13 .inner-1 ul {
+    flex-wrap: wrap;
+  }
+  .component-13 .inner-1 ul i {
+    font-size: 21px;
+  }
+  .component-13 h5 {
+    line-height: unset;
+  }
+}

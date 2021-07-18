@@ -1,97 +1,53 @@
 .component-4 {
   height: 501px;
-  background-color: var(--light-grey-color);
-}
-.component-4 button {
-  color: #34495e;
-  width: 173.68px;
-  height: 50px;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  cursor: pointer;
-  box-shadow: 0 11px 7px -10px #00000017;
-  transition: all 0.2s ease-out;
-  position: relative;
-}
+  background-color: $light-grey;
 
-.component-4 .container {
-  padding: 81px 0 0 18px;
-}
-.component-4 .inner-1 {
-  flex-basis: 570px;
-  height: 397px;
-  padding-top: 24px;
-  margin-left: 4px;
-}
+  .container {
+    padding: 81px 0 0 18px;
+    @extend .flex-centering;
 
-.component-4 .inner-1 p:nth-child(2) {
-  margin-bottom: 24px;
-}
-.component-4 .inner-1 p:nth-child(3) {
-  margin-bottom: 27px;
-}
+    .inner-1 {
+      flex-basis: 570px;
+      height: 397px;
+      padding-top: 24px;
+      margin-left: 4px;
 
-.component-4 .inner-2 {
-  flex-basis: 543px;
-}
-.component-4 h5 {
-  margin-bottom: 27px;
-}
+      & p:nth-child(2) {
+        margin-bottom: 24px;
+      }
 
-.component-4 .inner-2 {
-  margin-left: 63px;
-  margin-bottom: 24px;
-}
-.component-4 button span {
-  position: relative;
-  z-index: 2;
-}
+      & p:nth-child(3) {
+        margin-bottom: 27px;
+      }
 
-@media only screen and (max-width: 1280px) {
-  .component-4 {
-    height: unset;
-  }
-  .component-4 .container {
-    padding: 81px 10px 80px 10px;
-    justify-content: space-around;
-  }
-  .component-4 .inner-1 {
-    flex-basis: 30%;
-    height: unset;
-    padding-top: unset;
-    margin-left: unset;
-  }
-  .component-4 .inner-2 {
-    margin-left: unset;
-    flex-basis: unset;
-  }
-  .component-4 .inner-2 {
-    margin-bottom: unset;
+      button {
+        color: #34495e;
+        width: 173.68px;
+        height: 50px;
+        background-color: $color-white;
+        border: 1px solid #e5e5e5;
+        cursor: pointer;
+        box-shadow: 0 11px 7px -10px #00000017;
+        transition: all 0.2s ease-out;
+        position: relative;
+
+        span {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+
+    .inner-2 {
+      flex-basis: 543px;
+      margin-left: 63px;
+      margin-bottom: 24px;
+    }
+
+    h5 {
+      margin-bottom: 27px;
+    }
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .component-4 .container {
-    padding: 80px;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 49px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .component-4 .container {
-  }
-  .component-4 .inner-2 {
-    width: 100%;
-  }
-  .component-4 .inner-2 img {
-    width: 100%;
-  }
-  .component-4 h5 {
-    line-height: unset;
-  }
-  .component-4 .container {
-    padding: 40px;
-  }
-}
+@import "./responsive-4";
