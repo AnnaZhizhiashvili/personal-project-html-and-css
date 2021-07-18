@@ -3,6 +3,27 @@
   background-color: #222533;
   color: #fff;
   padding: 99px 20px 46px;
+
+  .radio {
+    label {
+      @include form-label;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+    input {
+      @include radio-input;
+      &:checked ~ .checkmark::before {
+        display: block;
+      }
+    }
+    .checkmark {
+      @include checkmark;
+      &::before {
+        @include checkmark-before;
+      }
+    }
+  }
 }
 .component-13 .container {
   gap: 32px;

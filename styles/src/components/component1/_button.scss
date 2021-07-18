@@ -1,16 +1,19 @@
-.component-1 button {
-  color: inherit;
-  width: 200px;
-  height: 60px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  cursor: pointer;
-  transition-duration: 0.2s;
-}
-.component-1 button:not(:last-child) {
-  margin-right: 15px;
-}
-.component-1 .buttons {
-  margin-top: 40px;
-  padding-left: 14px;
+.component-1 {
+  button {
+    color: inherit;
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    @include texts((Lato-Black, sans-serif), 18px, 19px);
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  .buttons {
+    margin-top: 40px;
+    padding-left: 14px;
+  }
 }

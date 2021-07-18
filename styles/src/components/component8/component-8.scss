@@ -2,6 +2,24 @@
   height: 747px;
   background-color: var(--light-grey-color);
   padding-top: 138px;
+  label {
+    @include form-label;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  input {
+    @include radio-input;
+    &:checked ~ .checkmark::before {
+      display: block;
+    }
+  }
+  .checkmark {
+    @include checkmark;
+    &::before {
+      @include checkmark-before;
+    }
+  }
 }
 .component-8 .container {
   align-items: center;

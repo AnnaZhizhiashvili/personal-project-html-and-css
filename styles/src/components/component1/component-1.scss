@@ -1,5 +1,4 @@
 @import "../../shared";
-@import "./responsive";
 @import "./button";
 @import "./form";
 
@@ -10,8 +9,7 @@
   height: 1280px;
   .container {
     position: absolute;
-    left: 50%;
-    top: 471px;
+    @include position(471px, 50%);
     transform: translateX(-50%);
     width: 1126px;
     height: 264px;
@@ -32,3 +30,25 @@
     }
   }
 }
+
+.component-1 {
+  button {
+    color: inherit;
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    @include texts((Lato-Black, sans-serif), 18px, 19px);
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  .buttons {
+    margin-top: 40px;
+    padding-left: 14px;
+  }
+}
+
+@import "./responsive";

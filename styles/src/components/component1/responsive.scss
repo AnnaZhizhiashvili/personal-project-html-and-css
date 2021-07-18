@@ -1,82 +1,108 @@
 @media only screen and (max-width: 1280px) {
-  .component-1 .container {
-    margin-left: unset;
-  }
-  .component-1 form {
-    padding-right: unset;
-  }
-  .component-1 .buttons {
-    padding-left: unset;
-  }
-  .component-1 .container {
-    width: unset;
-    height: unset;
-  }
-  .component-1 p:first-child {
-    padding-left: unset;
-  }
   .component-1 {
     height: 800px;
-  }
-  .component-1 .container p:nth-child(2) {
-    font-size: 50px;
-  }
-  .component-1 .container {
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .component-1 .container p:nth-child(2) {
-    font-size: 36px;
-  }
-  .component-1 .container p:nth-child(3),
-  .component-1 .container p:nth-child(1) {
-    font-size: 22px;
-  }
-  .component-1 .buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  .component-1 button {
-    width: 177px;
-    height: 58px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .component-1 {
-    height: 640px;
-  }
-  .component-1 .container p:nth-child(2) {
-    font-size: 20px;
-  }
-  .component-1 .container p:nth-child(3),
-  .component-1 .container p:nth-child(1) {
-    font-size: 14px;
-  }
-  .component-1 p:nth-child(3) {
-    margin-top: 32px;
-  }
-  .component-1 p:nth-child(1) {
-    margin-bottom: 34px;
+    .container {
+      margin-left: unset;
+    }
+    form {
+      padding-right: unset;
+    }
+    .buttons {
+      padding-left: unset;
+    }
+    .container {
+      width: unset;
+      height: unset;
+      & p:nth-child(2) {
+        font-size: 50px;
+      }
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    & p:first-child {
+      padding-left: unset;
+    }
   }
 
-  .component-1 button {
-    width: 128px;
-    height: 46px;
-    font-size: 12px;
+  //   .component-1 .container {
+  //     margin-left: unset;
+  //   }
+  //   .component-1 form {
+  //     padding-right: unset;
+  //   }
+  //   .component-1 .buttons {
+  //     padding-left: unset;
+  //   }
+  //   .component-1 .container {
+  //     width: unset;
+  //     height: unset;
+  //   }
+  //   .component-1 p:first-child {
+  //     padding-left: unset;
+  //   }
+  //   .component-1 {
+  //     height: 800px;
+  //   }
+  //   .component-1 .container p:nth-child(2) {
+  //     font-size: 50px;
+  //   }
+  //   .component-1 .container {
+  //     top: 50%;
+  //     transform: translate(-50%, -50%);
+  //   }
+  // }
+
+  @media only screen and (max-width: 1024px) {
+    .component-1 .container p:nth-child(2) {
+      font-size: 36px;
+    }
+    .component-1 .container p:nth-child(3),
+    .component-1 .container p:nth-child(1) {
+      font-size: 22px;
+    }
+    .component-1 .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .component-1 button {
+      width: 177px;
+      height: 58px;
+    }
   }
 
-  .component-1 .checkmark,
-  .component-8 .checkmark,
-  .component-13 .radio .checkmark {
-    height: 10px;
-    width: 10px;
+  @media only screen and (max-width: 768px) {
+    .component-1 {
+      height: 640px;
+    }
+    .component-1 .container p:nth-child(2) {
+      font-size: 20px;
+    }
+    .component-1 .container p:nth-child(3),
+    .component-1 .container p:nth-child(1) {
+      font-size: 14px;
+    }
+    .component-1 p:nth-child(3) {
+      margin-top: 32px;
+    }
+    .component-1 p:nth-child(1) {
+      margin-bottom: 34px;
+    }
+
+    .component-1 button {
+      width: 128px;
+      height: 46px;
+      font-size: 12px;
+    }
+
+    .component-1 .checkmark,
+    .component-8 .checkmark,
+    .component-13 .radio .checkmark {
+      height: 10px;
+      width: 10px;
+    }
   }
 }

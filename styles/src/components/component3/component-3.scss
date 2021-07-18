@@ -47,6 +47,18 @@
 .component-3 {
   position: relative;
 }
+@media only screen and (max-width: 1919px) {
+  .component-3,
+  .component-3 .box {
+    height: unset;
+  }
+  .component-3 {
+    padding: 135px;
+  }
+  .component-3 .box {
+    width: unset;
+  }
+}
 
 @media only screen and (max-width: 1280px) {
   .component-3,
