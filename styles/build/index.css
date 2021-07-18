@@ -1,107 +1,267 @@
-.component-1 {
-  position: relative;
-  background-color: var(--dark-grey-color);
-  color: #fff;
-  height: 1280px;
+@font-face {
+  font-family: "Lato-Black";
+  font-weight: 900;
+  src: url(../../fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: "Lato-Bold";
+  font-weight: 700;
+  src: url(../../fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  src: url(../../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato-Light";
+  font-weight: 300;
+  src: url(../../fonts/Lato-Light.ttf);
+}
+:root {
+  --dark-grey-color: #222533;
+  --dark-grey-secondary: #2c3e50;
+  --medium-grey-color: #a1b1bc;
+  --medium-grey-secondary: #34495e;
+  --light-grey-color: #ecf0f1;
+  --light-grey-secondary: #eaebec;
+  --main-green-color: #1abc9c;
 }
 
-.component-1 .container {
+.flex {
+  display: flex;
+}
+
+.flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.position-center {
   position: absolute;
-  left: 50%;
-  top: 471px;
-  transform: translateX(-50%);
-  width: 1126px;
-  height: 264px;
-  text-align: center;
-  margin-left: 9px;
+  top: 50%;
+  left: 50;
+  transform: translate(-50%, -50%);
 }
 
-.component-1 p:first-child {
-  letter-spacing: 0.3em;
-  margin-bottom: 18px;
-  padding-left: 11px;
+.transition {
+  transition: all 0.2s ease-out;
 }
 
-.component-1 p:nth-child(3) {
-  margin-top: 11px;
-}
-
-.component-1 button {
-  color: inherit;
-  width: 200px;
-  height: 60px;
-  background-color: transparent;
-  border: 1px solid #fff;
+/* button */
+button {
+  transition: all 0.2s ease-out;
   cursor: pointer;
-  transition-duration: 0.2s;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
-.component-1 button:not(:last-child) {
-  margin-right: 15px;
-}
-
-.component-1 .buttons {
-  margin-top: 40px;
-  padding-left: 14px;
-}
-
-.component-1 form {
-  margin-top: 26px;
-  padding-right: 15px;
-}
-
-.component-1 form label,
-.component-8 form label,
-.component-13 .radio form label {
+.button-1,
+.button-2 {
   position: relative;
-  display: inline-block;
-  width: 14px;
+  transition: 0.3s;
+  overflow: hidden;
 }
 
-.component-1 form label:not(:last-child),
-.component-8 form label:not(:last-child) {
-  margin-right: 5px;
-}
-
-.component-1 input,
-.component-8 input,
-.component-13 .radio input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.component-1 .checkmark,
-.component-8 .checkmark,
-.component-13 .radio .checkmark {
+.button-1::before,
+.button-2::before {
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.component-1 .checkmark::before,
-.component-8 .checkmark::before,
-.component-13 .radio .checkmark::before {
+  z-index: -1;
   content: "";
-  background-color: var(--main-green-color);
-  border-radius: 50%;
-  width: 7px;
-  height: 7px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  display: none;
-  transition-duration: 0.2s;
+  transition: transform 0.3s;
+  overflow: hidden;
+  right: auto;
+  bottom: auto;
+  width: 120%;
+  height: 100%;
+  transform-origin: right top;
+  transform: skewX(-30deg) scale(0, 1);
 }
 
-.container input:checked ~ .checkmark::before {
-  display: block;
+.button-1:hover,
+.button-2:hover {
+  color: #fff;
+}
+
+.button-1:hover::before {
+  background-color: var(--main-green-color);
+  z-index: 1;
+}
+
+.button-2:hover::before {
+  background-color: #3a3e4a;
+  z-index: 1;
+}
+
+.button-1:hover,
+.button-2:hover {
+  background: transparent;
+}
+
+.button-1:hover::before,
+.button-2:hover::before {
+  transform-origin: left top;
+  transform: skewX(-30deg) scale(1, 1);
+}
+
+.button-1 span,
+.button-2 span {
+  z-index: 1;
+  position: relative;
+}
+
+/* font-families */
+.lato-black {
+  font-family: Lato-Black, sans-serif;
+}
+
+.lato-bold {
+  font-family: Lato-Bold, sans-serif;
+}
+
+.lato-light {
+  font-family: Lato-Light, sans-serif;
+}
+
+.lato-regular {
+  font-family: Lato-Regular, sans-serif;
+}
+
+/* font-sizes */
+.font-14 {
+  font-size: 14px;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.font-36 {
+  font-size: 36px;
+}
+
+.font-48 {
+  font-size: 48px;
+}
+
+.font-60 {
+  font-size: 60px;
+}
+
+/* colors */
+.background-green {
+  background-color: var(--main-green-color);
+}
+
+.color-green {
+  color: var(--main-green-color);
+}
+
+.color-secondary-grey {
+  color: var(--dark-grey-secondary);
+}
+
+.color-medium-grey {
+  color: var(--medium-grey-color);
+}
+
+.background-medium-grey {
+  background-color: var(--medium-grey-color);
+}
+
+.background-light-grey {
+  background-color: var(--light-grey-color);
+}
+
+.background-medium-secondary {
+  background-color: var(--medium-grey-secondary);
+}
+
+.color-light-grey {
+  color: var(--light-grey-color);
+}
+
+.color-white {
+  color: #fff;
+}
+
+.green-table {
+  color: #7bc200;
+}
+
+.red-table {
+  color: #ef584d;
+}
+
+.background-gradient {
+  background: linear-gradient(45deg, #1dd1ad, #45d0ff);
+}
+
+/* line-heights */
+.line-height-19 {
+  line-height: 19px;
+}
+
+.line-height-20 {
+  line-height: 20px;
+}
+
+.line-height-21 {
+  line-height: 21px;
+}
+
+.line-height-24 {
+  line-height: 24px;
+}
+
+.line-height-27 {
+  line-height: 27px;
+}
+
+.line-height-30 {
+  line-height: 30px;
+}
+
+.line-height-36 {
+  line-height: 36px;
+}
+
+.line-height-40 {
+  line-height: 40px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -198,6 +358,105 @@
     width: 10px;
   }
 }
+.component-1 button {
+  color: inherit;
+  width: 200px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.component-1 button:not(:last-child) {
+  margin-right: 15px;
+}
+
+.component-1 .buttons {
+  margin-top: 40px;
+  padding-left: 14px;
+}
+
+.component-1 form {
+  margin-top: 26px;
+  padding-right: 15px;
+}
+.component-1 form label {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+}
+.component-1 form label:not(:last-child) {
+  margin-right: 5px;
+}
+.component-1 form input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.component-1 form input:checked ~ .checkmark::before {
+  display: block;
+}
+.component-1 form .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.component-1 form .checkmark::before {
+  content: "";
+  background-color: var(--main-green-color);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: none;
+  transition-duration: 0.2s;
+}
+
+.component-1 {
+  position: relative;
+  background-color: var(--dark-grey-color);
+  color: #fff;
+  height: 1280px;
+}
+.component-1 .container {
+  position: absolute;
+  left: 50%;
+  top: 471px;
+  transform: translateX(-50%);
+  width: 1126px;
+  height: 264px;
+  text-align: center;
+  margin-left: 9px;
+}
+.component-1 .container p:first-child {
+  letter-spacing: 0.3em;
+  margin-bottom: 18px;
+  padding-left: 11px;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 30px;
+  line-height: 19px;
+}
+.component-1 .container p:nth-child(2) {
+  font-family: Lato-Black, sans-serif;
+  font-size: 60px;
+  line-height: normal;
+}
+.component-1 .container p:nth-child(3) {
+  margin-top: 11px;
+  font-family: Lato-Light, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
 .component-2 {
   height: 90px;
   padding: 37px 457px 37.3px 375px;
@@ -2596,22 +2855,22 @@ textarea {
 @font-face {
   font-family: "Lato-Black";
   font-weight: 900;
-  src: url(../fonts/Lato-Black.ttf);
+  src: url(../../fonts/Lato-Black.ttf);
 }
 @font-face {
   font-family: "Lato-Bold";
   font-weight: 700;
-  src: url(../fonts/Lato-Bold.ttf);
+  src: url(../../fonts/Lato-Bold.ttf);
 }
 @font-face {
   font-family: "Lato-Regular";
   font-weight: 400;
-  src: url(../fonts/Lato-Regular.ttf);
+  src: url(../../fonts/Lato-Regular.ttf);
 }
 @font-face {
   font-family: "Lato-Light";
   font-weight: 300;
-  src: url(../fonts/Lato-Light.ttf);
+  src: url(../../fonts/Lato-Light.ttf);
 }
 :root {
   --dark-grey-color: #222533;

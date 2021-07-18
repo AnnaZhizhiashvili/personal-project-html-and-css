@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Lato-Black";
   font-weight: 900;
-  src: url(../fonts/Lato-Black.ttf);
+  src: url(../../fonts/Lato-Black.ttf);
 }
 @font-face {
   font-family: "Lato-Bold";
   font-weight: 700;
-  src: url(../fonts/Lato-Bold.ttf);
+  src: url(../../fonts/Lato-Bold.ttf);
 }
 @font-face {
   font-family: "Lato-Regular";
   font-weight: 400;
-  src: url(../fonts/Lato-Regular.ttf);
+  src: url(../../fonts/Lato-Regular.ttf);
 }
 @font-face {
   font-family: "Lato-Light";
   font-weight: 300;
-  src: url(../fonts/Lato-Light.ttf);
+  src: url(../../fonts/Lato-Light.ttf);
 }
 
 :root {
@@ -234,4 +234,45 @@ button {
 }
 .line-height-40 {
   line-height: 40px;
+}
+
+@mixin texts($font-family, $font-size, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin checkmark-before {
+  content: "";
+  background-color: var(--main-green-color);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: none;
+  transition-duration: 0.2s;
+}
+
+@mixin checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+@mixin radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+@mixin form-label {
+  position: relative;
+  display: inline-block;
+  width: 14px;
 }
