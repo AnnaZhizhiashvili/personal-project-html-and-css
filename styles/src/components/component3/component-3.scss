@@ -33,7 +33,7 @@
       height: 210px;
       width: 270px;
       img {
-        @include position(0, 50);
+        @include position(0, 50%);
         transform: translate(-50%, -50%);
       }
 

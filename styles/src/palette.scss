@@ -1,0 +1,35 @@
+:root {
+  --dark-grey-color: #222533;
+  --dark-grey-secondary: #2c3e50;
+  --medium-grey-color: #a1b1bc;
+  --medium-grey-secondary: #34495e;
+  --light-grey-color: #ecf0f1;
+  --light-grey-secondary: #eaebec;
+  --main-green-color: #1abc9c;
+}
+
+$dark-grey: #222533;
+$dark-grey-secondary: #2c3e50;
+$medium-grey: #a1b1bc;
+$medium-grey-secondary: #34495e;
+$light-grey: #ecf0f1;
+$light-grey-secondary: #eaebec;
+$main-green-color: #1abc9c;
+$color-white: #fff;
+
+$colors: (
+  color-white: $color-white,
+  green-table: #7bc200,
+  red-table: #ef584d,
+  color-light-grey: $light-grey,
+  color-medium-grey: $medium-grey,
+  color-secondary-grey: $dark-grey-secondary,
+  color-green: $main-green-color,
+);
+
+$background-colors: (
+  background-medium-grey: $medium-grey,
+  background-light-grey: $light-grey,
+  background-medium-secondary: $medium-grey-secondary,
+  background-green: $main-green-color,
+);

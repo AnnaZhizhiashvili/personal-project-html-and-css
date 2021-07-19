@@ -3,21 +3,21 @@
   background-color: var(--light-grey-color);
   padding-top: 138px;
   label {
-    @include form-label;
+    @extend .form-label;
     &:not(:last-child) {
       margin-right: 5px;
     }
   }
   input {
-    @include radio-input;
+    @extend .radio-input;
     &:checked ~ .checkmark::before {
       display: block;
     }
   }
   .checkmark {
-    @include checkmark;
+    @extend .checkmark;
     &::before {
-      @include checkmark-before;
+      @extend .checkmark-before;
     }
   }
 }

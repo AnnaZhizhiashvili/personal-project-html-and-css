@@ -1,3 +1,5 @@
+@import "./palette";
+
 @font-face {
   font-family: "Lato-Black";
   font-weight: 900;
@@ -41,58 +43,15 @@ $font-sizes-list: 14, 15, 16, 18, 24, 30, 36, 48, 60;
 
 // colors
 
-:root {
-  --dark-grey-color: #222533;
-  --dark-grey-secondary: #2c3e50;
-  --medium-grey-color: #a1b1bc;
-  --medium-grey-secondary: #34495e;
-  --light-grey-color: #ecf0f1;
-  --light-grey-secondary: #eaebec;
-  --main-green-color: #1abc9c;
-}
-
-$dark-grey: #222533;
-$dark-grey-secondary: #2c3e50;
-$medium-grey: #a1b1bc;
-$medium-grey-secondary: #34495e;
-$light-grey: #ecf0f1;
-$light-grey-secondary: #eaebec;
-$main-green-color: #1abc9c;
-$color-white: #fff;
-
 .background-gradient {
   background: linear-gradient(45deg, #1dd1ad, #45d0ff);
 }
-
-$colors: (
-  color-white: $color-white,
-  green-table: #7bc200,
-  red-table: #ef584d,
-  color-light-grey: $light-grey,
-  color-medium-grey: $medium-grey,
-  color-secondary-grey: $dark-grey-secondary,
-  color-green: $main-green-color,
-);
 
 @each $color-class, $color in $colors {
   .#{$color-class} {
     color: $color;
   }
 }
-
-$background-colors: (
-  background-medium-grey: $medium-grey,
-  background-light-grey: $light-grey,
-  background-medium-secondary: $medium-grey-secondary,
-  background-green: $main-green-color,
-);
-
-$background-colors: (
-  background-medium-grey: #a1b1bc,
-  background-light-grey: #ecf0f1,
-  background-medium-secondary: #34495e,
-  background-green: #1abc9c,
-);
 
 @each $background-class, $color in $background-colors {
   .#{$background-class} {
@@ -114,15 +73,44 @@ $font-family: (
   }
 }
 
-@mixin texts($font-family, $font-size, $line-height) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
+// positioning
+
+@mixin position($x: 50%, $y: 50%) {
+  position: absolute;
+  top: $x;
+  left: $y;
 }
 
-@mixin checkmark-before {
+// thid component grid heights
+
+@function container($size) {
+  @if $size == large {
+    @return 400px;
+  } @else if $size == medium {
+    @return 800px;
+  } @else {
+    @return 543px;
+  }
+}
+
+//
+
+$one-column: 570px;
+$gap-column: 30px;
+
+@function container-column($num: 1) {
+  @if $num > 1 {
+    @return $num * $one-column + $gap-column * ($num - 1);
+  } @else {
+    @return $one-column;
+  }
+}
+
+// common form classes
+
+.checkmark-before {
   content: "";
-  background-color: var(--main-green-color);
+  background-color: $main-green-color;
   border-radius: 50%;
   width: 7px;
   height: 7px;
@@ -134,31 +122,25 @@ $font-family: (
   transition-duration: 0.2s;
 }
 
-@mixin checkmark {
+.checkmark {
   position: absolute;
   top: 0;
   left: 0;
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: $color-white;
   cursor: pointer;
 }
-@mixin radio-input {
+.radio-input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-@mixin form-label {
+.form-label {
   position: relative;
   display: inline-block;
   width: 14px;
-}
-
-@mixin position($x: 50, $y: 50) {
-  position: absolute;
-  top: $x;
-  left: $y;
 }
 
 //  buttons

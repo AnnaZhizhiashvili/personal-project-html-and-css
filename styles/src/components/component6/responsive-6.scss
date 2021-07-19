@@ -1,0 +1,49 @@
+@media only screen and (max-width: 1280px) {
+  .component-6 {
+    height: unset;
+    padding: 60px;
+
+    .inner-1 p,
+    .inner-1 h5 {
+      padding-left: unset;
+    }
+
+    .box {
+      padding-left: unset;
+      height: unset;
+      padding: 146px 10px 8px;
+
+      img {
+        @include position(15.5%, 50%);
+        transform: translateX(-50%);
+      }
+    }
+
+    .box-4 h6 {
+      padding-left: unset;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .component-6 .inner-2 {
+    flex-wrap: wrap;
+
+    .inner-2 .box {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .component-6 {
+    padding: 59px 27px;
+
+    .inner-2 {
+      flex-direction: column;
+    }
+    h5 {
+      line-height: unset;
+    }
+  }
+}
