@@ -268,7 +268,7 @@ button {
   display: flex;
 }
 
-.flex-centering, .component-15 .container, .component-14 .container ul, .component-13 .container, .component-12 .inner-2, .component-10 .inner-3, .component-10 .box-footer, .component-10 .inner-2, .component-9 .inner-2, .component-9 .box-upper, .component-9 .g-box, .component-8 .container .inner-2, .component-5 .circle span, .component-5 .container, .component-4 .container, .component-3 .container, .mobile-nav ul, .component-2 .logo a, .component-2 {
+.flex-centering, .component-15 .container, .component-14 .container ul, .component-13 .container, .component-12 .inner-2, .component-10 .inner-3, .component-10 .box-footer, .component-10 .inner-2, .component-9 .inner-2 .box-upper .g-box, .component-9 .inner-2 .box-upper, .component-9 .inner-2, .component-8 .container .inner-2, .component-5 .circle span, .component-5 .container, .component-4 .container, .component-3 .container, .mobile-nav ul, .component-2 .logo a, .component-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1258,71 +1258,57 @@ button {
 }
 .component-9 {
   height: 881px;
-  background-color: var(--dark-grey-color);
+  background-color: #222533;
   color: #fff;
   text-align: center;
   padding-top: 104px;
 }
-
-.component-9 .g-box {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.component-9 .inner-1 {
+  padding-left: 17px;
+  margin-bottom: 42px;
 }
-
-.box-like {
-  background-color: var(--medium-grey-color);
+.component-9 .inner-1 h5 {
+  margin-bottom: 18px;
+}
+.component-9 .inner-2 {
+  margin-left: 16px;
+  gap: 62px;
+}
+.component-9 .inner-2 .box > div {
+  width: 300px;
+  height: 141.15px;
+  margin-bottom: 25px;
+}
+.component-9 .inner-2 .box-1 {
+  text-align: end;
+  margin-top: 27px;
+}
+.component-9 .inner-2 .box-1 .box-upper {
+  justify-content: flex-end;
+  gap: 14.3px;
+}
+.component-9 .inner-2 .box-like {
+  background-color: #a1b1bc;
   height: 649px;
   width: 446px;
   border-top-right-radius: 36px;
   border-top-left-radius: 36px;
 }
-
-.component-9 .inner-1 {
-  padding-left: 17px;
-  margin-bottom: 42px;
+.component-9 .inner-2 .box-3 {
+  text-align: start;
+  margin-top: 27px;
 }
-
-.component-9 h5 {
-  margin-bottom: 18px;
-}
-
-.component-9 .box > div {
-  width: 300px;
-  height: 141.15px;
-  margin-bottom: 25px;
-}
-
-.component-9 .box-upper {
-  margin-bottom: 9px;
-}
-
-.component-9 .box-1 .box-upper {
-  justify-content: flex-end;
-  gap: 14.3px;
-}
-
-.component-9 .box-3 .box-upper {
+.component-9 .inner-2 .box-3 .box-upper {
   justify-content: flex-start;
   gap: 10.7px;
 }
-
-.component-9 .box-1 {
-  text-align: end;
+.component-9 .inner-2 .box-upper {
+  margin-bottom: 9px;
 }
-
-.component-9 .box-3 {
-  text-align: start;
-}
-
-.component-9 .inner-2 {
-  margin-left: 16px;
-  gap: 62px;
-}
-
-.component-9 .box-1,
-.component-9 .box-3 {
-  margin-top: 27px;
+.component-9 .inner-2 .box-upper .g-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1330,36 +1316,31 @@ button {
     padding-top: 59px;
     height: unset;
   }
-
-  .component-9 .inner-2 {
-    margin-left: unset;
-    gap: 24px;
-  }
-
-  .component-9 .box-like {
-    order: 1;
-  }
-
-  .component-9 h5 {
-    font-size: 25px;
-  }
-
-  .component-9 p {
-    font-size: 13px;
-  }
-
   .component-9 .g-box {
     width: 37px;
     height: 37px;
   }
-
-  .component-9 .box-1,
-.component-9 .box-3 {
-    margin-top: unset;
+  .component-9 p {
+    font-size: 13px;
   }
-
   .component-9 .inner-1 {
     padding-left: unset;
+  }
+  .component-9 .inner-1 h5 {
+    font-size: 25px;
+  }
+  .component-9 .inner-2 {
+    margin-left: unset;
+    gap: 24px;
+  }
+  .component-9 .inner-2 .box-1 {
+    margin-top: unset;
+  }
+  .component-9 .inner-2 .box-like {
+    order: 1;
+  }
+  .component-9 .inner-2 .box-3 {
+    margin-top: unset;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1368,38 +1349,31 @@ button {
   }
 }
 @media only screen and (max-width: 768px) {
-  .component-9 .inner-2 {
-    flex-wrap: wrap;
-  }
-
-  .component-9 .box-upper > div {
-    order: -1;
-  }
-
-  .component-9 .box-1 .box-upper {
-    justify-content: flex-start;
-  }
-
-  .component-9 .box-1 {
-    text-align: start;
-  }
-
   .component-9 h5 {
     line-height: unset;
     font-size: 20px;
   }
-
-  .component-9 p {
-    font-size: 10px;
-  }
-
   .component-9 h6 {
     font-size: 16px;
   }
-
-  .component-9 .g-box {
+  .component-9 p {
+    font-size: 10px;
+  }
+  .component-9 .inner-2 {
+    flex-wrap: wrap;
+  }
+  .component-9 .inner-2 .g-box {
     width: 32px;
     height: 32px;
+  }
+  .component-9 .inner-2 .box-1 {
+    text-align: start;
+  }
+  .component-9 .inner-2 .box-1 .box-upper {
+    justify-content: flex-start;
+  }
+  .component-9 .inner-2 .box-1 .box-upper > div {
+    order: -1;
   }
 }
 .component-10 {
@@ -2911,7 +2885,7 @@ button {
   display: flex;
 }
 
-.flex-centering, .component-2, .component-2 .logo a, .mobile-nav ul, .component-3 .container, .component-4 .container, .component-5 .container, .component-5 .circle span, .component-8 .container .inner-2, .component-9 .g-box, .component-9 .box-upper, .component-9 .inner-2, .component-10 .inner-2, .component-10 .box-footer, .component-10 .inner-3, .component-12 .inner-2, .component-13 .container, .component-14 .container ul, .component-15 .container {
+.flex-centering, .component-2, .component-2 .logo a, .mobile-nav ul, .component-3 .container, .component-4 .container, .component-5 .container, .component-5 .circle span, .component-8 .container .inner-2, .component-9 .inner-2, .component-9 .inner-2 .box-upper, .component-9 .inner-2 .box-upper .g-box, .component-10 .inner-2, .component-10 .box-footer, .component-10 .inner-3, .component-12 .inner-2, .component-13 .container, .component-14 .container ul, .component-15 .container {
   display: flex;
   justify-content: center;
   align-items: center;
