@@ -154,7 +154,8 @@
     }
     .boxes {
       display: grid;
-      grid-template-columns: repeat(4, 85px);
+      grid-template-columns: repeat(4, 1fr);
+      width: container-column(4);
       gap: 10px;
     }
 

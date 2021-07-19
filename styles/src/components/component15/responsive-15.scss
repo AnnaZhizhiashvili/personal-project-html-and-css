@@ -16,10 +16,16 @@
 
     .inner-2 .boxes {
       flex-direction: row;
+
+      .box {
+        width: unset;
+        flex-basis: 33%;
+      }
     }
 
     .inner-3 .boxes {
       grid-template-columns: repeat(6, 1fr);
+      width: container-column(6);
     }
   }
 }

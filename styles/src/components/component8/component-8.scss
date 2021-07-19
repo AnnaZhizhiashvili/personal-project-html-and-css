@@ -1,109 +1,66 @@
 .component-8 {
   height: 747px;
-  background-color: var(--light-grey-color);
+  background-color: $light-grey;
   padding-top: 138px;
-  label {
-    @extend .form-label;
-    &:not(:last-child) {
-      margin-right: 5px;
+
+  .container {
+    align-items: center;
+    text-align: center;
+
+    .inner-1 {
+      padding-left: 18px;
+      margin-bottom: 62px;
+
+      h5 {
+        margin-bottom: 24px;
+      }
+    }
+
+    .inner-2 {
+      background-color: #fff;
+      width: 1170px;
+      height: 148px;
+      margin-left: 18px;
+      margin-bottom: 35px;
+      @extend .flex-centering;
+    }
+
+    .inner-3 {
+      margin-left: 20px;
+
+      div {
+        width: 112px;
+        height: 112px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        box-shadow: 0 11px 7px -10px #00000017;
+        margin-bottom: 16px;
+      }
+    }
+
+    .inner-4 {
+      label {
+        @extend .form-label;
+        margin-top: 37px;
+        margin-left: 27px;
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+      input {
+        @extend .radio-input;
+        &:checked ~ .checkmark::before {
+          display: block;
+        }
+      }
+      .checkmark {
+        @extend .checkmark;
+        &::before {
+          @extend .checkmark-before;
+        }
+      }
     }
   }
-  input {
-    @extend .radio-input;
-    &:checked ~ .checkmark::before {
-      display: block;
-    }
-  }
-  .checkmark {
-    @extend .checkmark;
-    &::before {
-      @extend .checkmark-before;
-    }
-  }
-}
-.component-8 .container {
-  align-items: center;
-  text-align: center;
-}
-.component-8 .inner-1 {
-  padding-left: 18px;
-  margin-bottom: 62px;
 }
 
-.component-8 h5 {
-  margin-bottom: 24px;
-}
-
-.component-8 .inner-2 {
-  background-color: #fff;
-  width: 1170px;
-  height: 148px;
-  margin-left: 18px;
-  margin-bottom: 35px;
-  @extend .flex-centering;
-}
-.component-8 .inner-3 {
-  margin-left: 20px;
-}
-.component-8 .inner-3 div {
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  box-shadow: 0 11px 7px -10px #00000017;
-  margin-bottom: 16px;
-}
-.component-8 .inner-4 {
-  margin-top: 37px;
-  margin-left: 27px;
-}
-
-@media only screen and (max-width: 1919px) {
-  .component-8 .inner-1 {
-    padding-left: unset;
-  }
-  .component-8 .inner-2 {
-    width: unset;
-  }
-  .component-8 .inner-3 {
-    margin-left: 20px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .component-8 .inner-2 {
-    width: 80%;
-    margin-left: unset;
-    padding: 30px;
-  }
-  .component-8 .inner-3,
-  .component-8 .inner-4 {
-    margin-left: unset;
-  }
-  .component-8 p {
-    font-size: 16px;
-  }
-  .component-8 .inner-3 > div:nth-child(1) {
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .component-8 p {
-    font-size: 10px;
-    line-height: 19px;
-  }
-  .component-8 h5 {
-    line-height: unset;
-  }
-  .component-8 .inner-4 {
-    margin-top: unset;
-    margin-left: unset;
-  }
-  .component-8 .inner-3 {
-    margin-left: unset;
-  }
-  .component-8 {
-    height: unset;
-    padding: 32px 10px;
-  }
-}
+@import "./responsive-8";

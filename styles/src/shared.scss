@@ -93,10 +93,10 @@ $font-family: (
   }
 }
 
-//
+// 15th component grid width calculation formula
 
-$one-column: 570px;
-$gap-column: 30px;
+$one-column: 85px;
+$gap-column: 10px;
 
 @function container-column($num: 1) {
   @if $num > 1 {
