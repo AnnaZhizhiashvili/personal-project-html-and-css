@@ -182,7 +182,7 @@ button {
   color: #fff;
 }
 .button-1:hover::before {
-  background-color: var(--main-green-color);
+  background-color: $main-green-color;
   z-index: 1;
 }
 .button-2:hover::before {

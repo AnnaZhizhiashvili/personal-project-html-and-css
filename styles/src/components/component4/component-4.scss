@@ -30,6 +30,9 @@
         box-shadow: 0 11px 7px -10px #00000017;
         transition: all 0.2s ease-out;
         position: relative;
+        &:hover {
+          color: $color-white;
+        }
 
         span {
           position: relative;

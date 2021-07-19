@@ -26,7 +26,7 @@
       transform: translateY(-4px);
 
       & span {
-        background-color: var(--dark-grey-secondary);
+        background-color: $dark-grey-secondary;
         color: #fff;
       }
     }
