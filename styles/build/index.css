@@ -64,7 +64,7 @@ button {
   position: relative;
 }
 
-.checkmark-before, .component-13 .radio .checkmark::before, .component-8 .container .inner-4 .checkmark::before, .component-1 form .checkmark::before {
+.checkmark-before, .component-13 .container .radio .checkmark::before, .component-8 .container .inner-4 .checkmark::before, .component-1 form .checkmark::before {
   content: "";
   background-color: #1abc9c;
   border-radius: 50%;
@@ -78,7 +78,7 @@ button {
   transition-duration: 0.2s;
 }
 
-.checkmark, .component-13 .radio .checkmark, .component-8 .container .inner-4 .checkmark, .component-1 form .checkmark {
+.checkmark, .component-13 .container .radio .checkmark, .component-8 .container .inner-4 .checkmark, .component-1 form .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,13 +89,13 @@ button {
   cursor: pointer;
 }
 
-.radio-input, .component-13 .radio input, .component-8 .container .inner-4 input, .component-1 form input {
+.radio-input, .component-13 .container .radio input, .component-8 .container .inner-4 input, .component-1 form input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.form-label, .component-13 .radio label, .component-8 .container .inner-4 label, .component-1 form label {
+.form-label, .component-13 .container .radio label, .component-8 .container .inner-4 label, .component-1 form label {
   position: relative;
   display: inline-block;
   width: 14px;
@@ -254,7 +254,7 @@ button {
   display: flex;
 }
 
-.flex-centering, .component-15 .container, .component-14 .container ul, .component-13 .container, .component-12 .inner-2, .component-10 .inner-3, .component-10 .box-footer, .component-10 .inner-2, .component-9 .inner-2 .box-upper .g-box, .component-9 .inner-2 .box-upper, .component-9 .inner-2, .component-8 .container .inner-2, .component-5 .circle span, .component-5 .container, .component-4 .container, .component-3 .container, .mobile-nav .component-2 ul, .component-2 .logo a, .component-2 {
+.flex-centering, .component-15 .container, .component-14 .container ul, .component-13 .container, .component-12 .container .inner-2, .component-10 .inner-3, .component-10 .box-footer, .component-10 .inner-2, .component-9 .inner-2 .box-upper .g-box, .component-9 .inner-2 .box-upper, .component-9 .inner-2, .component-8 .container .inner-2, .component-5 .circle span, .component-5 .container, .component-4 .container, .component-3 .container, .mobile-nav .component-2 ul, .component-2 .logo a, .component-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,7 +272,7 @@ button {
   margin: 0 auto;
 }
 
-.position-center, .component-15 .visualisation img, .component-5 .circle span {
+.position-center, .component-15 .visualisation img, .component-13 .container .visualisation img, .component-5 .circle span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -285,6 +285,13 @@ button {
 
 .background-gradient {
   background: linear-gradient(45deg, #1dd1ad, #45d0ff);
+}
+
+.input-textarea, .component-13 .container .below textarea, .component-13 .container .below input {
+  background-color: transparent;
+  border: 1px solid #636372;
+  width: 100%;
+  border-radius: 2px;
 }
 
 .component-1 button {
@@ -311,7 +318,7 @@ button {
 .component-1 form label:not(:last-child) {
   margin-right: 5px;
 }
-.component-1 form input:checked ~ .checkmark::before, .component-1 form .component-13 .radio input:checked ~ .checkmark::before, .component-1 form .component-8 .container .inner-4 input:checked ~ .checkmark::before, .component-8 .container .inner-4 .component-1 form input:checked ~ .checkmark::before {
+.component-1 form input:checked ~ .checkmark::before, .component-1 form .component-13 .container .radio input:checked ~ .checkmark::before, .component-13 .container .radio .component-1 form input:checked ~ .checkmark::before, .component-1 form .component-8 .container .inner-4 input:checked ~ .checkmark::before, .component-13 .component-1 form .component-8 .container .inner-4 .radio input:checked ~ .checkmark::before, .component-8 .container .inner-4 .component-1 form input:checked ~ .checkmark::before, .component-8 .component-13 .container .inner-4 .component-1 form .radio input:checked ~ .checkmark::before, .component-13 .component-8 .container .inner-4 .component-1 form .radio input:checked ~ .checkmark::before {
   display: block;
 }
 .component-1 {
@@ -438,10 +445,67 @@ button {
     font-size: 12px;
   }
 
-  .component-1 .checkmark, .component-1 form .checkmark,
+  .component-1 .checkmark, .component-1 .component-13 .container .radio .checkmark, .component-13 .container .radio .component-1 .checkmark, .component-1 form .component-13 .container .radio .checkmark, .component-13 .container .radio .component-1 form .checkmark, .component-1 .component-8 .component-13 .container .inner-4 .radio .checkmark, .component-8 .component-13 .container .inner-4 .radio .component-1 .checkmark, .component-1 .component-13 .component-8 .container .inner-4 .radio .checkmark, .component-13 .component-8 .container .inner-4 .radio .component-1 .checkmark, .component-1 .component-8 .component-13 .container .radio .inner-4 .checkmark, .component-8 .component-13 .container .radio .inner-4 .component-1 .checkmark, .component-1 .component-13 .component-8 .container .radio .inner-4 .checkmark, .component-13 .component-8 .container .radio .inner-4 .component-1 .checkmark, .component-1 form .component-8 .component-13 .container .inner-4 .radio .checkmark, .component-13 .component-1 form .component-8 .container .inner-4 .radio .checkmark, .component-1 form .component-8 .component-13 .container .radio .inner-4 .checkmark, .component-13 .component-1 form .component-8 .container .radio .inner-4 .checkmark, .component-8 .component-13 .container .inner-4 .component-1 form .radio .checkmark, .component-13 .component-8 .container .inner-4 .component-1 form .radio .checkmark, .component-8 .component-13 .container .radio .inner-4 .component-1 form .checkmark, .component-13 .component-8 .container .radio .inner-4 .component-1 form .checkmark, .component-1 form .checkmark, .component-1 form .component-13 .container .radio .checkmark, .component-13 .container .radio .component-1 form .checkmark, .component-1 form .component-13 .container .radio .checkmark, .component-13 .container .radio .component-1 form .checkmark, .component-1 form .component-8 .component-13 .container .inner-4 .radio .checkmark, .component-8 .component-13 .container .inner-4 .radio .component-1 form .checkmark, .component-1 form .component-13 .component-8 .container .inner-4 .radio .checkmark, .component-13 .component-8 .container .inner-4 .radio .component-1 form .checkmark, .component-1 form .component-8 .component-13 .container .radio .inner-4 .checkmark, .component-8 .component-13 .container .radio .inner-4 .component-1 form .checkmark, .component-1 form .component-13 .component-8 .container .radio .inner-4 .checkmark, .component-13 .component-8 .container .radio .inner-4 .component-1 form .checkmark, .component-1 form .component-8 .component-13 .container .inner-4 .radio .checkmark, .component-13 .component-1 form .component-8 .container .inner-4 .radio .checkmark, .component-1 form .component-8 .component-13 .container .radio .inner-4 .checkmark, .component-13 .component-1 form .component-8 .container .radio .inner-4 .checkmark, .component-8 .component-13 .container .inner-4 .component-1 form .radio .checkmark, .component-13 .component-8 .container .inner-4 .component-1 form .radio .checkmark, .component-8 .component-13 .container .radio .inner-4 .component-1 form .checkmark, .component-13 .component-8 .container .radio .inner-4 .component-1 form .checkmark,
 .component-8 .checkmark,
+.component-8 .component-13 .container .radio .checkmark,
+.component-13 .container .radio .component-8 .checkmark,
+.component-8 .component-1 form .component-13 .container .radio .checkmark,
+.component-1 form .component-13 .container .radio .component-8 .checkmark,
+.component-8 .component-13 .container .radio .component-1 form .checkmark,
+.component-13 .container .radio .component-1 form .component-8 .checkmark,
+.component-8 .component-13 .container .inner-4 .radio .checkmark,
+.component-13 .component-8 .container .inner-4 .radio .checkmark,
+.component-8 .component-13 .container .radio .inner-4 .checkmark,
+.component-13 .component-8 .container .radio .inner-4 .checkmark,
+.component-1 form .component-8 .component-13 .container .inner-4 .radio .checkmark,
+.component-13 .component-1 form .component-8 .container .inner-4 .radio .checkmark,
+.component-1 form .component-8 .component-13 .container .radio .inner-4 .checkmark,
+.component-13 .component-1 form .component-8 .container .radio .inner-4 .checkmark,
+.component-8 .component-13 .container .inner-4 .component-1 form .radio .checkmark,
+.component-13 .component-8 .container .inner-4 .component-1 form .radio .checkmark,
+.component-8 .component-13 .container .radio .inner-4 .component-1 form .checkmark,
+.component-13 .component-8 .container .radio .inner-4 .component-1 form .checkmark,
 .component-8 .container .inner-4 .checkmark,
-.component-13 .radio .checkmark {
+.component-8 .component-13 .container .inner-4 .radio .checkmark,
+.component-13 .component-8 .container .inner-4 .radio .checkmark,
+.component-8 .component-13 .container .radio .inner-4 .checkmark,
+.component-13 .component-8 .container .radio .inner-4 .checkmark,
+.component-8 .component-1 form .component-13 .container .inner-4 .radio .checkmark,
+.component-1 form .component-13 .component-8 .container .inner-4 .radio .checkmark,
+.component-8 .component-1 form .component-13 .container .radio .inner-4 .checkmark,
+.component-1 form .component-13 .component-8 .container .radio .inner-4 .checkmark,
+.component-8 .component-13 .container .inner-4 .radio .component-1 form .checkmark,
+.component-13 .component-8 .container .inner-4 .radio .component-1 form .checkmark,
+.component-8 .component-13 .container .radio .component-1 form .inner-4 .checkmark,
+.component-13 .component-8 .container .radio .component-1 form .inner-4 .checkmark,
+.component-8 .component-13 .container .inner-4 .radio .checkmark,
+.component-13 .component-8 .container .inner-4 .radio .checkmark,
+.component-8 .component-13 .container .radio .inner-4 .checkmark,
+.component-13 .component-8 .container .radio .inner-4 .checkmark,
+.component-1 form .component-8 .component-13 .container .inner-4 .radio .checkmark,
+.component-13 .component-1 form .component-8 .container .inner-4 .radio .checkmark,
+.component-1 form .component-8 .component-13 .container .radio .inner-4 .checkmark,
+.component-13 .component-1 form .component-8 .container .radio .inner-4 .checkmark,
+.component-8 .component-13 .container .inner-4 .component-1 form .radio .checkmark,
+.component-13 .component-8 .container .inner-4 .component-1 form .radio .checkmark,
+.component-8 .component-13 .container .radio .inner-4 .component-1 form .checkmark,
+.component-13 .component-8 .container .radio .inner-4 .component-1 form .checkmark,
+.component-13 .radio .checkmark,
+.component-13 .container .radio .checkmark,
+.component-1 form .component-13 .container .radio .checkmark,
+.component-13 .container .radio .component-1 form .checkmark,
+.component-8 .component-13 .container .inner-4 .radio .checkmark,
+.component-13 .component-8 .container .inner-4 .radio .checkmark,
+.component-8 .component-13 .container .radio .inner-4 .checkmark,
+.component-13 .component-8 .container .radio .inner-4 .checkmark,
+.component-1 form .component-8 .component-13 .container .inner-4 .radio .checkmark,
+.component-13 .component-1 form .component-8 .container .inner-4 .radio .checkmark,
+.component-1 form .component-8 .component-13 .container .radio .inner-4 .checkmark,
+.component-13 .component-1 form .component-8 .container .radio .inner-4 .checkmark,
+.component-8 .component-13 .container .inner-4 .component-1 form .radio .checkmark,
+.component-13 .component-8 .container .inner-4 .component-1 form .radio .checkmark,
+.component-8 .component-13 .container .radio .inner-4 .component-1 form .checkmark,
+.component-13 .component-8 .container .radio .inner-4 .component-1 form .checkmark {
     height: 10px;
     width: 10px;
   }
@@ -1155,7 +1219,7 @@ button {
     gap: 11px;
     white-space: nowrap;
   }
-  .component-7 .inner-3 {
+  .component-7 .boxes .inner-3 {
     width: 90%;
     height: 543px;
   }
@@ -1201,7 +1265,7 @@ button {
 .component-8 .container .inner-4 label:not(:last-child) {
   margin-right: 5px;
 }
-.component-8 .container .inner-4 input:checked ~ .checkmark::before, .component-8 .container .inner-4 .component-13 .radio input:checked ~ .checkmark::before, .component-8 .container .inner-4 .component-1 form input:checked ~ .checkmark::before {
+.component-8 .container .inner-4 input:checked ~ .checkmark::before, .component-8 .component-13 .container .inner-4 .radio input:checked ~ .checkmark::before, .component-13 .component-8 .container .inner-4 .radio input:checked ~ .checkmark::before, .component-8 .container .inner-4 .component-1 form input:checked ~ .checkmark::before {
   display: block;
 }
 @media only screen and (max-width: 1919px) {
@@ -1648,80 +1712,70 @@ button {
 .component-12 {
   height: 789px;
 }
-
 .component-12 .container {
   padding-top: 100px;
 }
-
-.component-12 .visual {
+.component-12 .container .visual {
   width: 170px;
   height: 100%;
   background-color: #cccccc;
+  transition: all 0.2s ease-out;
 }
-
-.component-12 .box {
+.component-12 .container .visual:hover {
+  background-color: #2c3e50;
+  cursor: pointer;
+}
+.component-12 .container .box {
   min-width: 385px;
   height: 200px;
   gap: 14px;
 }
-
-.component-12 i {
+.component-12 .container i {
   line-height: 30px;
   font-size: 15px;
   margin-right: 6px;
 }
-
-.component-12 h5 {
+.component-12 .container h5 {
   margin-bottom: 19px;
 }
-
-.component-12 h6 {
+.component-12 .container h6 {
   position: relative;
   bottom: 7px;
   left: 6px;
 }
-
-.component-12 .description > div {
+.component-12 .container .description > div {
   position: relative;
   bottom: 1px;
   left: 7px;
 }
-
-.component-12 .inner-2 {
+.component-12 .container .inner-2 {
   flex-wrap: wrap;
   width: 1273px;
   gap: 14px;
   margin-left: 330px;
 }
-
-.component-12 .inner-1 {
+.component-12 .container .inner-2 .box:nth-child(1),
+.component-12 .container .inner-2 .box:nth-child(2),
+.component-12 .container .inner-2 .box:nth-child(3) {
+  margin-bottom: 37px;
+}
+.component-12 .container .inner-1 {
   text-align: center;
   padding-left: 28px;
   margin-bottom: 48px;
 }
 
-.component-12 .inner-2 .box:nth-child(1),
-.component-12 .inner-2 .box:nth-child(2),
-.component-12 .inner-2 .box:nth-child(3) {
-  margin-bottom: 37px;
-}
-
-.component-12 .visual {
-  transition: all 0.2s ease-out;
-}
-
-.component-12 .visual:hover {
-  background-color: #2c3e50;
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 1919px) {
-  .component-12 .inner-2 {
+  .component-12 {
+    padding-bottom: 41px;
+    padding: 0 20px 41px;
+    height: unset;
+  }
+  .component-12 .container .inner-2 {
     margin-left: unset;
     margin: 0 auto;
   }
-
-  .component-12 .inner-1 {
+  .component-12 .container .inner-1 {
     padding-left: unset;
   }
 }
@@ -1729,79 +1783,59 @@ button {
   .component-12 br {
     display: none;
   }
-
-  .component-12 {
-    padding-bottom: 41px;
-    height: unset;
-  }
-
-  .component-12 .inner-2 {
+  .component-12 .container .inner-2 {
     width: unset;
     gap: 40px;
   }
-
-  .component-12 .box {
+  .component-12 .container .box {
     min-width: unset;
     flex-basis: 33.3%;
   }
-
-  .component-12 h6,
-.component-12 .description > div {
-    position: static;
-  }
-
-  .component-12 .visual {
-    min-width: 40%;
-  }
-
-  .component-12 .inner-1 p {
-    padding: 0 99px;
-  }
-
-  .component-12 .inner-2 .box:nth-child(1),
-.component-12 .inner-2 .box:nth-child(2),
-.component-12 .inner-2 .box:nth-child(3) {
+  .component-12 .container .box:nth-child(1), .component-12 .container .box:nth-child(2), .component-12 .container .box:nth-child(3) {
     margin-bottom: unset;
   }
+  .component-12 .container .description > div {
+    position: static;
+  }
+  .component-12 .container .visual {
+    min-width: 40%;
+  }
+  .component-12 .container .inner-1 p {
+    padding: 0 99px;
+  }
 }
-@media only screen and (max-width: 1024px) {
-  .component-12 h6 {
+@media only screen and (max-width: 1292px) and (max-width: 1024px) {
+  .component-12 .container h6 {
     font-size: 15px;
   }
-
-  .component-12 span {
+  .component-12 .container span {
     font-size: 13px;
   }
-
-  .component-12 .box {
+  .component-12 .container .box {
     flex-basis: 70%;
   }
-
-  .component-12 .visual {
+  .component-12 .container .visual {
     min-width: unset;
     width: 35%;
   }
-
-  .component-12 .description {
+  .component-12 .container .description {
     flex-basis: 64%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1292px) and (max-width: 768px) {
   .component-12 .container {
     padding-top: 39px;
     padding-bottom: 131px;
   }
-
-  .component-12 .inner-1 p {
+  .component-12 .container .inner-1 p {
     padding: 0px 23px;
   }
-
-  .component-12 .inner-2 {
+  .component-12 .container .inner-2 {
     width: unset;
     gap: 145px;
   }
 
-  .component-12 .visual {
+  .visual {
     width: unset;
   }
 }
@@ -1811,238 +1845,161 @@ button {
   color: #fff;
   padding: 99px 20px 46px;
 }
-.component-13 .radio label:not(:last-child) {
-  margin-right: 5px;
-}
-.component-13 .radio input:checked ~ .checkmark::before, .component-13 .radio .component-8 .container .inner-4 input:checked ~ .checkmark::before, .component-13 .radio .component-1 form input:checked ~ .checkmark::before {
-  display: block;
-}
 .component-13 .container {
   gap: 32px;
 }
-
-.component-13 .upper ul {
-  gap: 26px;
+.component-13 .container .radio form {
+  position: relative;
+  bottom: 6px;
+  left: 1px;
 }
-
-.component-13 h5 {
-  margin-bottom: 45.5px;
+.component-13 .container .radio label:not(:last-child) {
+  margin-right: 5px;
 }
-
-.component-13 .inner-1 p {
-  padding-left: 3px;
-  margin-bottom: 17px;
+.component-13 .container .radio input:checked ~ .checkmark::before, .component-13 .container .radio .component-1 form input:checked ~ .checkmark::before, .component-13 .component-8 .container .radio .inner-4 input:checked ~ .checkmark::before, .component-8 .component-13 .container .radio .inner-4 input:checked ~ .checkmark::before {
+  display: block;
 }
-
-.component-13 i {
-  font-size: 24px;
+.component-13 .container .radio .checkmark {
+  border-radius: unset !important;
 }
-
-.component-13 i:hover {
-  color: #16b5d8;
+.component-13 .container .radio .checkmark::before {
+  border-radius: unset !important;
 }
-
-.component-13 input {
-  height: 50px;
-  padding-left: 20px;
+.component-13 .container .below {
+  padding-left: 2px;
+  margin-top: 28px;
 }
-
-.component-13 textarea {
-  height: 100px;
-}
-
-.component-13 input,
-.component-13 textarea {
-  background-color: transparent;
-  border: 1px solid #636372;
-  width: 100%;
-  border-radius: 2px;
-}
-
-.component-13 input::placeholder {
-  color: #fff;
-}
-
-.component-13 .below form {
+.component-13 .container .below form {
   width: 570px;
   gap: 20px;
   align-items: stretch;
 }
-
-.component-13 button {
+.component-13 .container .below input {
+  height: 50px;
+  padding-left: 20px;
+}
+.component-13 .container .below input::placeholder {
+  color: #fff;
+}
+.component-13 .container .below textarea {
+  height: 100px;
+}
+.component-13 .container .upper ul {
+  gap: 26px;
+}
+.component-13 .container h5 {
+  margin-bottom: 45.5px;
+}
+.component-13 .container .inner-1 p {
+  padding-left: 3px;
+  margin-bottom: 17px;
+}
+.component-13 .container i {
+  font-size: 24px;
+}
+.component-13 .container i:hover {
+  color: #16b5d8;
+}
+.component-13 .container button {
   width: 100%;
   height: 52px;
 }
-
-.component-13 .below {
-  padding-left: 2px;
-  margin-top: 28px;
+.component-13 .container button:hover {
+  opacity: 0.7;
 }
-
-.component-13 .visualisation {
+.component-13 .container .visualisation {
   width: 125px;
   height: 125px;
   background-color: #fff;
   border: 5px solid #fff;
   position: relative;
 }
-
-.component-13 .box {
+.component-13 .container .box {
   justify-content: space-between;
   gap: 20px;
 }
-
-.component-13 .box:not(:last-child) {
+.component-13 .container .box:hover {
+  cursor: pointer;
+}
+.component-13 .container .box:hover .visualisation {
+  background: transparent;
+}
+.component-13 .container .box:not(:last-child) {
   margin-bottom: 39.6px;
 }
-
-.component-13 .description p:first-child {
+.component-13 .container .description p:first-child {
   position: relative;
   bottom: 5px;
 }
-
-.component-13 .description p:nth-child(2) {
+.component-13 .container .description p:nth-child(2) {
   padding-bottom: 3px;
   position: relative;
   bottom: 3px;
 }
-
-.component-13 .inner-2 h5 {
+.component-13 .container h5 {
   margin-bottom: 53.5px;
-}
-
-.component-13 .box:hover {
-  cursor: pointer;
-}
-
-.component-13 .box:hover .visualisation {
-  background: transparent;
-}
-
-.component-13 .visualisation img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.component-13 .radio .checkmark, .component-13 .radio .component-8 .container .inner-4 .checkmark, .component-8 .container .inner-4 .component-13 .radio .checkmark,
-.component-13 .radio .checkmark::before,
-.component-13 .radio .component-8 .container .inner-4 .checkmark::before,
-.component-8 .container .inner-4 .component-13 .radio .checkmark::before {
-  border-radius: unset;
-}
-
-.component-13 .radio .checkmark::before, .component-13 .radio .component-8 .container .inner-4 .checkmark::before, .component-8 .container .inner-4 .component-13 .radio .checkmark::before {
-  width: 100%;
-  height: 100%;
-}
-
-.component-13 .radio .checkmark, .component-13 .radio .component-8 .container .inner-4 .checkmark, .component-8 .container .inner-4 .component-13 .radio .checkmark {
-  width: 10px;
-  height: 10px;
-}
-
-.component-13 .radio form label:not(:last-child) {
-  margin-right: 1px;
-}
-
-.component-13 .radio form {
-  position: relative;
-  bottom: 6px;
-  left: 1px;
-}
-
-.component-13 button:hover {
-  opacity: 0.7;
 }
 
 @media only screen and (max-width: 1280px) {
   .component-13 {
     height: unset;
   }
-
   .component-13 .container {
     flex-direction: column;
-  }
-
-  .component-13 .container {
     gap: 73px;
   }
-
-  .component-13 .inner-1 p {
+  .component-13 .container .inner-1 p {
     padding-left: unset;
   }
 }
 @media only screen and (max-width: 768px) {
-  .component-13 .below form {
-    width: unset;
-  }
-
-  .component-13 button,
-.component-13 input,
-.component-13 textarea,
-.component-13 .inner-2 {
-    width: 80%;
-  }
-
-  .component-13 .upper ul {
-    gap: 2.8%;
-  }
-
-  .component-13 .inner-1 {
-    text-align: center;
-  }
-
-  .component-13 .upper ul {
-    justify-content: center;
-  }
-
-  .component-13 br {
-    display: none;
-  }
-
-  .component-13 h5 {
-    font-size: 31px;
-  }
-
-  .component-13 p {
-    font-size: 13px;
-    margin: 0 auto;
-  }
-
-  .component-13 .inner-2 .visualisation,
-.component-13 .description {
-    flex-basis: 100%;
-  }
-
-  .component-13 .inner-2 .box {
-    align-items: center;
-  }
-
-  .component-13 .inner-2 .box {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .component-13 .inner-2 .visualisation {
-    min-height: 117px;
-  }
-
   .component-13 {
     padding-bottom: 131px;
   }
-
+  .component-13 .container .below form {
+    width: unset;
+  }
+  .component-13 .container .below form button,
+.component-13 .container .below form input,
+.component-13 .container .below form textarea,
+.component-13 .container .below form .inner-2 {
+    width: 80%;
+  }
+  .component-13 .container .upper ul {
+    gap: 2.8%;
+    justify-content: center;
+  }
+  .component-13 .container br {
+    display: none;
+  }
+  .component-13 .container .inner-1 {
+    text-align: center;
+  }
+  .component-13 .container h5 {
+    font-size: 31px;
+    line-height: unset;
+  }
+  .component-13 .container p {
+    font-size: 13px;
+    margin: 0 auto;
+  }
+  .component-13 .container .visualisation {
+    min-height: 117px;
+  }
+  .component-13 .container .visualisation,
+.component-13 .container .description {
+    flex-basis: 100%;
+  }
+  .component-13 .box {
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .component-13 .inner-1 ul {
     flex-wrap: wrap;
   }
-
   .component-13 .inner-1 ul i {
     font-size: 21px;
-  }
-
-  .component-13 h5 {
-    line-height: unset;
   }
 }
 .component-14 {
@@ -2577,7 +2534,7 @@ button {
   position: relative;
 }
 
-.checkmark-before, .component-1 form .checkmark::before, .component-8 .container .inner-4 .checkmark::before, .component-13 .radio .checkmark::before {
+.checkmark-before, .component-1 form .checkmark::before, .component-8 .container .inner-4 .checkmark::before, .component-13 .container .radio .checkmark::before {
   content: "";
   background-color: #1abc9c;
   border-radius: 50%;
@@ -2591,7 +2548,7 @@ button {
   transition-duration: 0.2s;
 }
 
-.checkmark, .component-1 form .checkmark, .component-8 .container .inner-4 .checkmark, .component-13 .radio .checkmark {
+.checkmark, .component-1 form .checkmark, .component-8 .container .inner-4 .checkmark, .component-13 .container .radio .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -2602,13 +2559,13 @@ button {
   cursor: pointer;
 }
 
-.radio-input, .component-1 form input, .component-8 .container .inner-4 input, .component-13 .radio input {
+.radio-input, .component-1 form input, .component-8 .container .inner-4 input, .component-13 .container .radio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.form-label, .component-1 form label, .component-8 .container .inner-4 label, .component-13 .radio label {
+.form-label, .component-1 form label, .component-8 .container .inner-4 label, .component-13 .container .radio label {
   position: relative;
   display: inline-block;
   width: 14px;
@@ -2767,7 +2724,7 @@ button {
   display: flex;
 }
 
-.flex-centering, .component-2, .component-2 .logo a, .mobile-nav .component-2 ul, .component-3 .container, .component-4 .container, .component-5 .container, .component-5 .circle span, .component-8 .container .inner-2, .component-9 .inner-2, .component-9 .inner-2 .box-upper, .component-9 .inner-2 .box-upper .g-box, .component-10 .inner-2, .component-10 .box-footer, .component-10 .inner-3, .component-12 .inner-2, .component-13 .container, .component-14 .container ul, .component-15 .container {
+.flex-centering, .component-2, .component-2 .logo a, .mobile-nav .component-2 ul, .component-3 .container, .component-4 .container, .component-5 .container, .component-5 .circle span, .component-8 .container .inner-2, .component-9 .inner-2, .component-9 .inner-2 .box-upper, .component-9 .inner-2 .box-upper .g-box, .component-10 .inner-2, .component-10 .box-footer, .component-10 .inner-3, .component-12 .container .inner-2, .component-13 .container, .component-14 .container ul, .component-15 .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2785,7 +2742,7 @@ button {
   margin: 0 auto;
 }
 
-.position-center, .component-5 .circle span, .component-15 .visualisation img {
+.position-center, .component-5 .circle span, .component-13 .container .visualisation img, .component-15 .visualisation img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2798,6 +2755,13 @@ button {
 
 .background-gradient {
   background: linear-gradient(45deg, #1dd1ad, #45d0ff);
+}
+
+.input-textarea, .component-13 .container .below input, .component-13 .container .below textarea {
+  background-color: transparent;
+  border: 1px solid #636372;
+  width: 100%;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=index.css.map */

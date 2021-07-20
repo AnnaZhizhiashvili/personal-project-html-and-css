@@ -95,10 +95,11 @@
         gap: 11px;
         white-space: nowrap;
       }
-
-      .inner-3 {
-        width: 90%;
-        height: container(small);
+      .boxes {
+        .inner-3 {
+          width: 90%;
+          height: container(small);
+        }
       }
     }
   }
