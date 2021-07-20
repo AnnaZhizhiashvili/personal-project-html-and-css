@@ -1,0 +1,98 @@
+//  buttons
+
+button {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.button-1,
+.button-2 {
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.button-1::before,
+.button-2::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  transition: transform 0.3s;
+  overflow: hidden;
+  right: auto;
+  bottom: auto;
+  width: 120%;
+  height: 100%;
+  transform-origin: right top;
+  transform: skewX(-30deg) scale(0, 1);
+}
+.button-1:hover,
+.button-2:hover {
+  color: #fff;
+}
+.button-1:hover::before {
+  background-color: $main-green-color;
+  z-index: 1;
+}
+.button-2:hover::before {
+  background-color: #3a3e4a;
+  z-index: 1;
+}
+.button-1:hover,
+.button-2:hover {
+  background: transparent;
+}
+
+.button-1:hover::before,
+.button-2:hover::before {
+  transform-origin: left top;
+  transform: skewX(-30deg) scale(1, 1);
+}
+.button-1 span,
+.button-2 span {
+  z-index: 1;
+  position: relative;
+}
+
+// common form classes
+
+.checkmark-before {
+  content: "";
+  background-color: $main-green-color;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: none;
+  transition-duration: 0.2s;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $color-white;
+  cursor: pointer;
+}
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-label {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+}

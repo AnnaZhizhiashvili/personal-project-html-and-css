@@ -1,7 +1,8 @@
 .component-9 {
   height: 881px;
+  $main-color: $dark-grey;
   background-color: $dark-grey;
-  color: #fff;
+  color: $color-white;
   text-align: center;
   padding-top: 104px;
 
@@ -37,7 +38,8 @@
     }
 
     .box-like {
-      background-color: $medium-grey;
+      $main-color: $medium-grey;
+      background-color: $main-color;
       height: 649px;
       width: 446px;
       border-top-right-radius: 36px;

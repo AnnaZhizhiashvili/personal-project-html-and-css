@@ -1,3 +1,5 @@
+$main-color: $dark-grey;
+
 .component-2 {
   height: 90px;
   padding: 37px 457px 37.3px 375px;
@@ -34,21 +36,22 @@
   height: 100%;
   color: #fff;
   display: none;
-  background-image: linear-gradient(315deg, $dark-grey, $light-grey);
+  background-image: linear-gradient(315deg, $main-color, $light-grey);
   box-shadow: rgb(0 0 0 / 15%) 6.95px 0 2.6px;
   box-shadow: inset 0 0 5px #707070;
   .component-2 {
     display: inline-block;
     height: 100%;
-  }
-  .mobile-nav .logo {
-    margin-bottom: 35px;
-  }
-  ul {
-    gap: 27px;
-    color: $dark-grey;
-    @extend .flex-centering;
-    text-align: center;
+
+    .logo {
+      margin-bottom: 35px;
+    }
+    ul {
+      gap: 27px;
+      color: $main-color;
+      @extend .flex-centering;
+      text-align: center;
+    }
   }
 }
 

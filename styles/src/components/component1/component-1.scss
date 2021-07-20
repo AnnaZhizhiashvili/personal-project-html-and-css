@@ -2,10 +2,12 @@
 @import "./button";
 @import "./form";
 
+$main-color: $dark-grey !default;
+
 .component-1 {
   position: relative;
-  background-color: $dark-grey;
-  color: #fff;
+  background-color: $main-color;
+  color: $color-white;
   height: 1280px;
   .container {
     position: absolute;
@@ -35,7 +37,7 @@
     width: 200px;
     height: 60px;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid $color-white;
     cursor: pointer;
     transition-duration: 0.2s;
     &:not(:last-child) {

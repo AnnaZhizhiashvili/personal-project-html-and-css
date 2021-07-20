@@ -1,6 +1,6 @@
 .component-8 {
   height: 747px;
-  background-color: $light-grey;
+  background-color: $main-color;
   padding-top: 138px;
 
   .container {
@@ -17,7 +17,7 @@
     }
 
     .inner-2 {
-      background-color: #fff;
+      background-color: $color-white;
       width: 1170px;
       height: 148px;
       margin-left: 18px;
@@ -32,7 +32,7 @@
         width: 112px;
         height: 112px;
         border-radius: 50%;
-        border: 5px solid #fff;
+        border: 5px solid $color-white;
         box-shadow: 0 11px 7px -10px #00000017;
         margin-bottom: 16px;
       }

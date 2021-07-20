@@ -1,13 +1,15 @@
+main {
+  padding-bottom: 10px;
+}
+
 .component-15 {
   height: 603px;
   background-color: #1a1c27;
   color: $color-white;
-  padding-top: 90px;
-  padding-left: 17px;
 
   .container {
+    padding: 86px 358px 86px 377px;
     gap: 32px;
-    justify-content: center;
     @extend .flex-centering;
   }
 
@@ -35,21 +37,22 @@
         right: -26px;
         top: -14px;
       }
+    }
 
-      & div:nth-child(2) {
-        width: 370.26px;
-        padding-left: 3px;
+    & div:nth-child(2) {
+      width: 370.26px;
+      padding-left: 3px;
 
-        & p:nth-child(1) {
-          margin-bottom: 26px;
-        }
+      & p:nth-child(1) {
+        margin-bottom: 24px;
       }
     }
   }
 
   .about {
     position: relative;
-    padding-left: 29px;
+    padding-left: 28px;
+    padding-top: 7px;
     margin-bottom: 75px;
 
     &::after {
@@ -73,7 +76,7 @@
 
   .wrap {
     position: relative;
-    margin-top: 25px;
+    margin-top: 28px;
     input {
       background-color: $dark-grey;
       width: 370px;
@@ -143,9 +146,24 @@
     a {
       display: inline-block;
       margin-top: 26px;
+      position: relative;
       &:hover {
         transform: scale(0.95);
         opacity: 0.95;
+      }
+      &:hover i {
+        right: -20%;
+        opacity: 1;
+      }
+
+      i {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $main-green-color;
+        transition: all 0.2s ease-out;
+        opacity: 0;
       }
     }
     .about {

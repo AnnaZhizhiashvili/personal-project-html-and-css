@@ -3,102 +3,107 @@
   text-align: center;
   padding-top: 103px;
   box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1);
-}
-.component-10 .box {
-  width: 293px;
-  height: 475px;
-  color: #686d80;
-  background-color: var(--light-grey-secondary);
-}
-.component-10 .box-header {
-  padding-top: 22.5px;
-}
-.component-10 .inner-2 {
-  @extend .flex-centering;
-}
-.component-10 .box-header span {
-  position: absolute;
-  right: 42%;
-  bottom: 17%;
-}
-.component-10 .box-header div:first-child {
-  padding-bottom: 21.4px;
-}
-.component-10 .box-header div:nth-child(2) {
-  padding-bottom: 24px;
-  padding-top: 6px;
-  padding-right: 1px;
-  position: relative;
-}
-.component-10 .box > div {
-  border: 0.5px solid white;
-}
-.component-10 button {
-  width: 120px;
-  height: 32px;
-}
 
-.component-10 .inner-box {
-  height: 39px;
-}
+  .container {
+    padding-left: 16px;
+    padding-top: 2px;
+  }
 
-.component-10 .box-footer {
-  flex-grow: 1;
-  @extend .flex-centering;
-}
-.component-10 .box-1 .box-header {
-  height: 152px;
-  background-color: $light-grey;
-}
+  .inner-1 {
+    margin-bottom: 84px;
 
-.component-10 .box-1 .box-header {
-  padding-top: 3px;
-}
-.component-10 .box:not(:first-child) {
-  transition: all 0.2s ease-out;
-}
+    h5 {
+      margin-bottom: 16px;
+    }
+  }
 
-.component-10 .box:not(:first-child):hover {
-  cursor: pointer;
-  transform: translateY(-20px);
-}
+  .inner-2 {
+    @extend .flex-centering;
+  }
 
-.component-10 .inner-1 {
-  margin-bottom: 84px;
-}
+  .box {
+    width: 293px;
+    height: 475px;
+    color: #686d80;
+    background-color: $light-grey-secondary;
 
-.component-10 h5 {
-  margin-bottom: 16px;
-}
-.component-10 .container {
-  padding-left: 16px;
-  padding-top: 2px;
-}
+    &:not(:first-child) {
+      transition: all 0.2s ease-out;
+    }
+    &:not(:first-child):hover {
+      cursor: pointer;
+      transform: translateY(-20px);
+    }
 
-.component-10 .inner-3 {
-  text-align: start;
-  width: 1170px;
-  height: 150px;
-  @extend .flex-centering;
-  justify-content: space-between;
-  margin-top: 99px;
-  border: 1px solid #eaebec;
-  padding-left: 45px;
-  padding-right: 49px;
-  position: relative;
-}
-.component-10 .inner-3 button {
-  width: 176px;
-  height: 50px;
-}
-.component-10 .inner-3::after {
-  content: "";
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  height: 96%;
-  width: 10px;
-  background-color: var(--main-green-color);
+    .box-header {
+      padding-top: 22.5px;
+      height: 152px;
+      background-color: $medium-grey-secondary;
+
+      div:first-child {
+        padding-bottom: 21.4px;
+      }
+
+      div:nth-child(2) {
+        padding: 6px 1px 24px;
+        position: relative;
+      }
+
+      & span {
+        @include position(65%, 42%);
+      }
+    }
+
+    & > div {
+      border: 0.5px solid $color-white;
+    }
+  }
+
+  button {
+    width: 120px;
+    height: 32px;
+  }
+
+  .inner-box {
+    height: 39px;
+  }
+  .box-footer {
+    flex-grow: 1;
+    @extend .flex-centering;
+  }
+
+  .box-1 {
+    .box-header {
+      padding-top: 3px;
+      background-color: $main-color;
+    }
+  }
+
+  .inner-3 {
+    text-align: start;
+    width: 1170px;
+    height: 150px;
+    @extend .flex-centering;
+    justify-content: space-between;
+    margin-top: 99px;
+    border: 1px solid #eaebec;
+    padding-left: 45px;
+    padding-right: 49px;
+    position: relative;
+
+    &::after {
+      content: "";
+      @include position(3px, 3px);
+      height: 96%;
+      width: 10px;
+      background-color: $main-green-color;
+    }
+
+    button {
+      width: 176px;
+      height: 50px;
+    }
+  }
 }
 
 @import "./responsive-10";

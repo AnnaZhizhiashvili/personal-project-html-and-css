@@ -1,0 +1,120 @@
+@import "./palette";
+@import "./shared-components";
+@import "./fonts";
+
+/* line-heights */
+
+$line-heights-list: 19, 20, 21, 24, 27, 30, 36, 40;
+
+@for $i from 1 through length($line-heights-list) {
+  .line-height-#{nth($line-heights-list, $i)} {
+    line-height: nth($line-heights-list, $i) + px;
+  }
+}
+
+// font-sizes
+
+$font-sizes-list: 14, 15, 16, 18, 24, 30, 36, 48, 60;
+
+@each $item in $font-sizes-list {
+  .font-#{$item} {
+    font-size: $item + px;
+  }
+}
+
+// colors
+
+@each $color-class, $color in $colors {
+  .#{$color-class} {
+    color: $color;
+  }
+}
+
+@each $background-class, $color in $background-colors {
+  .#{$background-class} {
+    background-color: $color;
+  }
+}
+
+//  font-family
+$font-family: (
+  lato-bold: Lato-Bold,
+  lato-light: Lato-Light,
+  lato-regular: Lato-Regular,
+  lato-black: Lato-Black,
+);
+
+@each $class-name, $font-family-value in $font-family {
+  .#{$class-name} {
+    font-family: $font-family-value;
+  }
+}
+
+// positioning
+
+@mixin position($x: 50%, $y: 50%) {
+  position: absolute;
+  top: $x;
+  left: $y;
+}
+
+// thid component grid heights
+
+@function container($size) {
+  @if $size == large {
+    @return 400px;
+  } @else if $size == medium {
+    @return 800px;
+  } @else {
+    @return 543px;
+  }
+}
+
+// 15th component grid width calculation formula
+
+$one-column: 85px;
+$gap-column: 10px;
+
+@function container-column($num: 1) {
+  @if $num > 1 {
+    @return $num * $one-column + $gap-column * ($num - 1);
+  } @else {
+    @return $one-column;
+  }
+}
+
+// shared classes
+
+.flex {
+  display: flex;
+}
+.flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.transition {
+  transition: all 0.2s ease-out;
+}
+
+.background-gradient {
+  background: linear-gradient(45deg, #1dd1ad, #45d0ff);
+}

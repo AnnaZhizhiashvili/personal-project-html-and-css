@@ -1,3 +1,5 @@
+$main-color: $main-green-color;
+
 .component-3 {
   height: 434px;
   padding: 134px 336px 0 379px;
@@ -38,8 +40,8 @@
       }
 
       &:hover img {
-        -webkit-filter: opacity(0.5) drop-shadow(0 0 0 $main-green-color);
-        filter: opacity(0.5) drop-shadow(0 0 0 $main-green-color);
+        -webkit-filter: opacity(0.5) drop-shadow(0 0 0 $main-color);
+        filter: opacity(0.5) drop-shadow(0 0 0 $main-color);
       }
     }
   }
