@@ -1,3 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
+
+i {
+  color: #fff;
+}
+
+input {
+  border: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
 button {
   transition: all 0.2s ease-out;
   cursor: pointer;
@@ -121,6 +159,50 @@ button {
   font-weight: 300;
   src: url(../../fonts/Lato-Light.ttf);
 }
+.flex {
+  display: flex;
+}
+
+.flex-centering, .component-15 .container, .component-14 .container ul, .component-13 .container, .component-12 .container .inner-2, .component-10 .inner-3, .component-10 .box-footer, .component-10 .inner-2, .component-9 .inner-2 .box-upper .g-box, .component-9 .inner-2 .box-upper, .component-9 .inner-2, .component-8 .container .inner-2, .component-5 .circle span, .component-5 .container, .component-4 .container, .component-3 .container, .mobile-nav .component-2 ul, .component-2 .logo a, .component-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.position-center, .component-15 .visualisation img, .component-13 .container .visualisation img, .component-5 .circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.transition {
+  transition: all 0.2s ease-out;
+}
+
+.background-gradient {
+  background: linear-gradient(45deg, #1dd1ad, #45d0ff);
+}
+
+.input-textarea, .component-13 .container .below textarea, .component-13 .container .below input {
+  background-color: transparent;
+  border: 1px solid #636372;
+  width: 100%;
+  border-radius: 2px;
+}
+
 /* line-heights */
 .line-height-19 {
   line-height: 19px;
@@ -250,51 +332,11 @@ button {
   font-family: Lato-Black;
 }
 
-.flex {
-  display: flex;
+.component-1 .buttons {
+  margin-top: 40px;
+  padding-left: 14px;
 }
-
-.flex-centering, .component-15 .container, .component-14 .container ul, .component-13 .container, .component-12 .container .inner-2, .component-10 .inner-3, .component-10 .box-footer, .component-10 .inner-2, .component-9 .inner-2 .box-upper .g-box, .component-9 .inner-2 .box-upper, .component-9 .inner-2, .component-8 .container .inner-2, .component-5 .circle span, .component-5 .container, .component-4 .container, .component-3 .container, .mobile-nav .component-2 ul, .component-2 .logo a, .component-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.center {
-  margin: 0 auto;
-}
-
-.position-center, .component-15 .visualisation img, .component-13 .container .visualisation img, .component-5 .circle span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.transition {
-  transition: all 0.2s ease-out;
-}
-
-.background-gradient {
-  background: linear-gradient(45deg, #1dd1ad, #45d0ff);
-}
-
-.input-textarea, .component-13 .container .below textarea, .component-13 .container .below input {
-  background-color: transparent;
-  border: 1px solid #636372;
-  width: 100%;
-  border-radius: 2px;
-}
-
-.component-1 button {
+.component-1 .buttons button {
   color: inherit;
   width: 200px;
   height: 60px;
@@ -303,12 +345,8 @@ button {
   cursor: pointer;
   transition-duration: 0.2s;
 }
-.component-1 button:not(:last-child) {
+.component-1 .buttons button:not(:last-child) {
   margin-right: 15px;
-}
-.component-1 .buttons {
-  margin-top: 40px;
-  padding-left: 14px;
 }
 
 .component-1 form {
@@ -350,7 +388,11 @@ button {
   margin-top: 11px;
 }
 
-.component-1 button {
+.component-1 .buttons {
+  margin-top: 40px;
+  padding-left: 14px;
+}
+.component-1 .buttons button {
   color: inherit;
   width: 200px;
   height: 60px;
@@ -359,12 +401,8 @@ button {
   cursor: pointer;
   transition-duration: 0.2s;
 }
-.component-1 button:not(:last-child) {
+.component-1 .buttons button:not(:last-child) {
   margin-right: 15px;
-}
-.component-1 .buttons {
-  margin-top: 40px;
-  padding-left: 14px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -695,17 +733,17 @@ button {
   .component-3 {
     padding: 60px 0;
   }
-  .component-3 .component-3 .container {
+  .component-3 .container {
     margin-right: unset;
   }
-  .component-3 .component-3 .container .boxes .box {
+  .component-3 .container .boxes .box {
     flex-basis: 70%;
     padding: 12.8px 15.6px;
   }
-  .component-3 .component-3 .container .boxes p {
+  .component-3 .container .boxes p {
     font-size: 13px;
   }
-  .component-3 .component-3 .container .boxes h6 {
+  .component-3 .container .boxes h6 {
     font-size: 16px;
   }
 }
@@ -864,33 +902,33 @@ button {
     height: unset;
     padding: 76px;
   }
-  .component-5 .inner-1 {
-    height: unset;
-    width: unset;
+  .component-5 .container {
+    padding: unset;
   }
-  .component-5 .inner-2 {
-    margin-left: unset;
-  }
-  .component-5 .inner-2 .inner-container:nth-child(2),
-.component-5 .inner-2 .inner-container:nth-child(3) {
-    margin-right: unset;
-  }
-  .component-5 .inner-2 > div {
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  .component-5 .inner-container {
+  .component-5 .container .inner-container {
     flex-basis: 44%;
     margin: unset;
   }
-  .component-5 .inner-container div:nth-child(2) {
+  .component-5 .container .inner-container div:nth-child(2) {
     padding: 5px 20px;
   }
-  .component-5 .inner-container div:nth-child(2) p {
+  .component-5 .container .inner-container div:nth-child(2) p {
     padding: 0 48px;
   }
-  .component-5 .container {
-    padding: unset;
+  .component-5 .container .inner-1 {
+    height: unset;
+    width: unset;
+  }
+  .component-5 .container .inner-2 {
+    margin-left: unset;
+  }
+  .component-5 .container .inner-2 .inner-container:nth-child(2),
+.component-5 .container .inner-2 .inner-container:nth-child(3) {
+    margin-right: unset;
+  }
+  .component-5 .container .inner-2 > div {
+    flex-wrap: wrap;
+    gap: 40px;
   }
 }
 @media only screen and (max-width: 1280px) and (max-width: 1024px) {
@@ -902,21 +940,17 @@ button {
   .component-5 {
     padding: 64px 13px;
   }
-
-  .component-5 .inner-2 > div {
-    flex-direction: column;
-  }
-
   .component-5 .inner-container div:nth-child(2),
 .component-5 .inner-container div:nth-child(2) p {
     padding: unset;
   }
-
+  .component-5 .inner-2 > div {
+    flex-direction: column;
+  }
   .component-5 .inner-1 {
     margin-bottom: 73px;
   }
-
-  .component-5 h5 {
+  .component-5 .inner-1 h5 {
     line-height: unset;
   }
 }
@@ -1642,11 +1676,9 @@ button {
     height: unset;
     padding-bottom: 60px;
   }
-
   .component-11 .inner-1 {
     width: 40%;
   }
-
   .component-11 .inner-1 img {
     width: 100%;
   }
@@ -1655,16 +1687,13 @@ button {
   .component-11 .inner-1 {
     display: none;
   }
-
   .component-11 .inner-2 {
     margin-left: unset;
     padding-top: 38px;
   }
-
   .component-11 .below-part {
     margin-right: unset;
   }
-
   .component-11 br {
     display: none;
   }
@@ -1673,40 +1702,33 @@ button {
   .component-11 {
     padding-top: unset;
   }
-
+  .component-11 .visual {
+    width: 55%;
+    min-height: 100px;
+  }
+  .component-11 .box {
+    flex-direction: column;
+  }
+  .component-11 .box img {
+    max-width: 35px;
+    max-height: 40px;
+  }
   .component-11 .boxes {
     width: unset;
     justify-content: center;
     height: unset;
     gap: 29px;
   }
-
   .component-11 .boxes > div {
     flex-basis: 70%;
   }
-
   .component-11 h5 {
     font-size: 32px;
     text-align: center;
     line-height: unset;
   }
-
   .component-11 h6 {
     line-height: unset;
-  }
-
-  .component-11 .box img {
-    max-width: 35px;
-    max-height: 40px;
-  }
-
-  .component-12 .visual {
-    width: 55%;
-    min-height: 100px;
-  }
-
-  .component-12 .box {
-    flex-direction: column;
   }
 }
 .component-12 {
@@ -2429,339 +2451,6 @@ main {
   .component-16 .container .inner-2 {
     order: -1;
   }
-}
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-li {
-  list-style: none;
-}
-
-button {
-  outline: none;
-}
-
-i {
-  color: #fff;
-}
-
-input {
-  border: none;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-}
-
-textarea {
-  resize: none;
-}
-
-button {
-  transition: all 0.2s ease-out;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
-
-.button-1,
-.button-2 {
-  position: relative;
-  transition: 0.3s;
-  overflow: hidden;
-}
-
-.button-1::before,
-.button-2::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  content: "";
-  transition: transform 0.3s;
-  overflow: hidden;
-  right: auto;
-  bottom: auto;
-  width: 120%;
-  height: 100%;
-  transform-origin: right top;
-  transform: skewX(-30deg) scale(0, 1);
-}
-
-.button-1:hover,
-.button-2:hover {
-  color: #fff;
-}
-
-.button-1:hover::before {
-  background-color: #1abc9c;
-  z-index: 1;
-}
-
-.button-2:hover::before {
-  background-color: #3a3e4a;
-  z-index: 1;
-}
-
-.button-1:hover,
-.button-2:hover {
-  background: transparent;
-}
-
-.button-1:hover::before,
-.button-2:hover::before {
-  transform-origin: left top;
-  transform: skewX(-30deg) scale(1, 1);
-}
-
-.button-1 span,
-.button-2 span {
-  z-index: 1;
-  position: relative;
-}
-
-.checkmark-before, .component-1 form .checkmark::before, .component-8 .container .inner-4 .checkmark::before, .component-13 .container .radio .checkmark::before {
-  content: "";
-  background-color: #1abc9c;
-  border-radius: 50%;
-  width: 7px;
-  height: 7px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  display: none;
-  transition-duration: 0.2s;
-}
-
-.checkmark, .component-1 form .checkmark, .component-8 .container .inner-4 .checkmark, .component-13 .container .radio .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.radio-input, .component-1 form input, .component-8 .container .inner-4 input, .component-13 .container .radio input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.form-label, .component-1 form label, .component-8 .container .inner-4 label, .component-13 .container .radio label {
-  position: relative;
-  display: inline-block;
-  width: 14px;
-}
-
-@font-face {
-  font-family: "Lato-Black";
-  font-weight: 900;
-  src: url(../../fonts/Lato-Black.ttf);
-}
-@font-face {
-  font-family: "Lato-Bold";
-  font-weight: 700;
-  src: url(../../fonts/Lato-Bold.ttf);
-}
-@font-face {
-  font-family: "Lato-Regular";
-  font-weight: 400;
-  src: url(../../fonts/Lato-Regular.ttf);
-}
-@font-face {
-  font-family: "Lato-Light";
-  font-weight: 300;
-  src: url(../../fonts/Lato-Light.ttf);
-}
-/* line-heights */
-.line-height-19 {
-  line-height: 19px;
-}
-
-.line-height-20 {
-  line-height: 20px;
-}
-
-.line-height-21 {
-  line-height: 21px;
-}
-
-.line-height-24 {
-  line-height: 24px;
-}
-
-.line-height-27 {
-  line-height: 27px;
-}
-
-.line-height-30 {
-  line-height: 30px;
-}
-
-.line-height-36 {
-  line-height: 36px;
-}
-
-.line-height-40 {
-  line-height: 40px;
-}
-
-.font-14 {
-  font-size: 14px;
-}
-
-.font-15 {
-  font-size: 15px;
-}
-
-.font-16 {
-  font-size: 16px;
-}
-
-.font-18 {
-  font-size: 18px;
-}
-
-.font-24 {
-  font-size: 24px;
-}
-
-.font-30 {
-  font-size: 30px;
-}
-
-.font-36 {
-  font-size: 36px;
-}
-
-.font-48 {
-  font-size: 48px;
-}
-
-.font-60 {
-  font-size: 60px;
-}
-
-.color-white {
-  color: #fff;
-}
-
-.green-table {
-  color: #7bc200;
-}
-
-.red-table {
-  color: #ef584d;
-}
-
-.color-light-grey {
-  color: #ecf0f1;
-}
-
-.color-medium-grey {
-  color: #a1b1bc;
-}
-
-.color-secondary-grey {
-  color: #2c3e50;
-}
-
-.color-green {
-  color: #1abc9c;
-}
-
-.background-medium-grey {
-  background-color: #a1b1bc;
-}
-
-.background-light-grey {
-  background-color: #ecf0f1;
-}
-
-.background-medium-secondary {
-  background-color: #34495e;
-}
-
-.background-green {
-  background-color: #1abc9c;
-}
-
-.lato-bold {
-  font-family: Lato-Bold;
-}
-
-.lato-light {
-  font-family: Lato-Light;
-}
-
-.lato-regular {
-  font-family: Lato-Regular;
-}
-
-.lato-black {
-  font-family: Lato-Black;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-centering, .component-2, .component-2 .logo a, .mobile-nav .component-2 ul, .component-3 .container, .component-4 .container, .component-5 .container, .component-5 .circle span, .component-8 .container .inner-2, .component-9 .inner-2, .component-9 .inner-2 .box-upper, .component-9 .inner-2 .box-upper .g-box, .component-10 .inner-2, .component-10 .box-footer, .component-10 .inner-3, .component-12 .container .inner-2, .component-13 .container, .component-14 .container ul, .component-15 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.center {
-  margin: 0 auto;
-}
-
-.position-center, .component-5 .circle span, .component-13 .container .visualisation img, .component-15 .visualisation img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.transition {
-  transition: all 0.2s ease-out;
-}
-
-.background-gradient {
-  background: linear-gradient(45deg, #1dd1ad, #45d0ff);
-}
-
-.input-textarea, .component-13 .container .below input, .component-13 .container .below textarea {
-  background-color: transparent;
-  border: 1px solid #636372;
-  width: 100%;
-  border-radius: 2px;
 }
 
 /*# sourceMappingURL=index.css.map */

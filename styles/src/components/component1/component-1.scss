@@ -1,4 +1,4 @@
-@import "../../shared";
+// @import "../../shared";
 @import "./button";
 @import "./form";
 
@@ -32,21 +32,21 @@ $main-color: $dark-grey !default;
 }
 
 .component-1 {
-  button {
-    color: inherit;
-    width: 200px;
-    height: 60px;
-    background-color: transparent;
-    border: 1px solid $color-white;
-    cursor: pointer;
-    transition-duration: 0.2s;
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
-  }
   .buttons {
     margin-top: 40px;
     padding-left: 14px;
+    button {
+      color: inherit;
+      width: 200px;
+      height: 60px;
+      background-color: transparent;
+      border: 1px solid $color-white;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
   }
 }
 

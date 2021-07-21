@@ -3,39 +3,38 @@
     height: unset;
     padding: 76px;
 
-    .inner-1 {
-      height: unset;
-      width: unset;
-    }
-
-    .inner-2 {
-      margin-left: unset;
-
-      .inner-container:nth-child(2),
-      .inner-container:nth-child(3) {
-        margin-right: unset;
-      }
-
-      & > div {
-        flex-wrap: wrap;
-        gap: 40px;
-      }
-    }
-
-    .inner-container {
-      flex-basis: 44%;
-      margin: unset;
-
-      & div:nth-child(2) {
-        padding: 5px 20px;
-
-        p {
-          padding: 0 48px;
-        }
-      }
-    }
     .container {
       padding: unset;
+      .inner-container {
+        flex-basis: 44%;
+        margin: unset;
+
+        & div:nth-child(2) {
+          padding: 5px 20px;
+
+          p {
+            padding: 0 48px;
+          }
+        }
+      }
+      .inner-1 {
+        height: unset;
+        width: unset;
+      }
+
+      .inner-2 {
+        margin-left: unset;
+
+        .inner-container:nth-child(2),
+        .inner-container:nth-child(3) {
+          margin-right: unset;
+        }
+
+        & > div {
+          flex-wrap: wrap;
+          gap: 40px;
+        }
+      }
     }
   }
 
@@ -48,19 +47,21 @@
   @media only screen and (max-width: 765px) {
     .component-5 {
       padding: 64px 13px;
-    }
-    .component-5 .inner-2 > div {
-      flex-direction: column;
-    }
-    .component-5 .inner-container div:nth-child(2),
-    .component-5 .inner-container div:nth-child(2) p {
-      padding: unset;
-    }
-    .component-5 .inner-1 {
-      margin-bottom: 73px;
-    }
-    .component-5 h5 {
-      line-height: unset;
+      .inner-container div:nth-child(2),
+      .inner-container div:nth-child(2) p {
+        padding: unset;
+      }
+
+      .inner-2 > div {
+        flex-direction: column;
+      }
+      .inner-1 {
+        margin-bottom: 73px;
+
+        h5 {
+          line-height: unset;
+        }
+      }
     }
   }
 }
