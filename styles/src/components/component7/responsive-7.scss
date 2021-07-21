@@ -99,6 +99,11 @@
         .inner-3 {
           width: 90%;
           height: container(small);
+          .box {
+            img {
+              top: 2%;
+            }
+          }
         }
       }
     }

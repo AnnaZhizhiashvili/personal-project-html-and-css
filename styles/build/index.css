@@ -738,7 +738,7 @@ button {
   }
   .component-3 .container .boxes .box {
     flex-basis: 70%;
-    padding: 12.8px 15.6px;
+    height: unset;
   }
   .component-3 .container .boxes p {
     font-size: 13px;
@@ -1256,6 +1256,9 @@ button {
   .component-7 .boxes .inner-3 {
     width: 90%;
     height: 543px;
+  }
+  .component-7 .boxes .inner-3 .box img {
+    top: 2%;
   }
 }
 .component-8 {
